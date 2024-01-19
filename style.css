@@ -35,7 +35,7 @@ body,
 p,
 .link,
 .page_list li a {
-	font-family: "Barlow";
+	font-family: 'Barlow', sans-serif;
 	font-size: 15px;
 }
 
@@ -45,20 +45,20 @@ p,
 .polyfill_circle a,
 .circle_text {
 	font-size: 16px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 500;
 }
 
 .lg_title {
 	font-size: 28px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 .normal_title,
 .list_title,
 .page_list li {
 	font-size: 18px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 .md_title,
@@ -67,13 +67,13 @@ input.link_btn,
 .quick_links,
 .master_links {
 	font-size: 24px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 
 .sm_title {
 	font-size: 18px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 
@@ -91,7 +91,7 @@ input.link_btn,
 .menu_bar li a,
 .header_content a,
 .header_content input {
-	font-family: "Barlow";
+	font-family: 'Barlow', sans-serif;
 	font-size: 17px;
 }
 .error {
@@ -206,7 +206,7 @@ input.link_btn,
 
 .lg_title {
 	font-size: 28px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 .content {
@@ -235,7 +235,7 @@ input.link_btn,
 .quick_links,
 .master_links {
 	font-size: 24px;
-	font-family: "Avenir Heavy";
+	font-family: 'Barlow', sans-serif;
 	font-weight: 900;
 }
 
@@ -780,6 +780,18 @@ a:focus {
 .construction {
 	-ms-transform: rotate(337.5deg); /* IE 9 */
 	transform: rotate(337.5deg);
+}
+.link_btn_container{
+	padding-top: 8px;
+}
+
+.link_btn{
+	font-size: 7px !important;
+	background: transparent !important;
+	padding: 3px 10px;
+	background-color: #0364A5 !important;
+	border: none;
+	color: white;
 }
 
 /* text  */
