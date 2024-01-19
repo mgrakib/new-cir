@@ -35,7 +35,7 @@ body,
 p,
 .link,
 .page_list li a {
-	font-family: "Avenir";
+	font-family: "Barlow";
 	font-size: 15px;
 }
 
@@ -91,7 +91,7 @@ input.link_btn,
 .menu_bar li a,
 .header_content a,
 .header_content input {
-	font-family: "Avenir";
+	font-family: "Barlow";
 	font-size: 17px;
 }
 .error {
