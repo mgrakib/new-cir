@@ -1,14 +1,10 @@
 /** @format */
 
-
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
-
-
 
 .overlay-bg {
 	width: 400px;
@@ -20,7 +16,6 @@
 	top: 60%;
 	transform: translate(-50%);
 }
-
 
 *,
 *:before,
@@ -35,7 +30,7 @@ body,
 p,
 .link,
 .page_list li a {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-size: 15px;
 }
 
@@ -45,20 +40,20 @@ p,
 .polyfill_circle a,
 .circle_text {
 	font-size: 16px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 500;
 }
 
 .lg_title {
 	font-size: 28px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 .normal_title,
 .list_title,
 .page_list li {
 	font-size: 18px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 .md_title,
@@ -67,13 +62,13 @@ input.link_btn,
 .quick_links,
 .master_links {
 	font-size: 24px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 
 .sm_title {
 	font-size: 18px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 
@@ -91,7 +86,7 @@ input.link_btn,
 .menu_bar li a,
 .header_content a,
 .header_content input {
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-size: 17px;
 }
 .error {
@@ -206,7 +201,7 @@ input.link_btn,
 
 .lg_title {
 	font-size: 28px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 .content {
@@ -235,7 +230,7 @@ input.link_btn,
 .quick_links,
 .master_links {
 	font-size: 24px;
-	font-family: 'Barlow', sans-serif;
+	font-family: "Barlow", sans-serif;
 	font-weight: 900;
 }
 
@@ -354,7 +349,8 @@ input.link_btn,
 	opacity: 0;
 }
 .spray_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg")
+		no-repeat;
 	background-size: 73%;
 	padding: 28% 0;
 	width: 100%;
@@ -363,7 +359,8 @@ input.link_btn,
 	opacity: 0;
 }
 .cast_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Military-Blast-Mitigation-1200.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Military-Blast-Mitigation-1200.jpg")
+		no-repeat;
 	background-size: 80%;
 	padding: 28% 0;
 	width: 100%;
@@ -382,7 +379,8 @@ input.link_btn,
 	opacity: 0;
 }
 .theme_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/armorthane-polyurea-water-feature-coatings-6-6509ac4ea43a1.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/armorthane-polyurea-water-feature-coatings-6-6509ac4ea43a1.jpg")
+		no-repeat;
 	background-size: 80%;
 	padding: 28% 0;
 	width: 100%;
@@ -404,7 +402,8 @@ input.link_btn,
 }
 
 .poly_fil_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/prop-making-main.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/prop-making-main.jpg")
+		no-repeat;
 	background-size: 73%;
 	padding: 28% 0;
 	width: 100%;
@@ -413,7 +412,8 @@ input.link_btn,
 	opacity: 0;
 }
 .foam_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/glo-water-reservoir-waterproofing-01-1-1.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/glo-water-reservoir-waterproofing-01-1-1.jpg")
+		no-repeat;
 	background-size: 80%;
 	padding: 28% 0;
 	width: 100%;
@@ -422,7 +422,8 @@ input.link_btn,
 	opacity: 0;
 }
 .construction_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/seamless-rv-roof-coatning.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/seamless-rv-roof-coatning.jpg")
+		no-repeat;
 	background-size: 100%;
 	padding: 38% 0;
 	width: 94%;
@@ -433,7 +434,8 @@ input.link_btn,
 	opacity: 0;
 }
 .concrete_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Mine-Equipment-Coatings-Backup.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Mine-Equipment-Coatings-Backup.jpg")
+		no-repeat;
 	background-size: 73%;
 	padding: 28% 0;
 	width: 100%;
@@ -453,7 +455,8 @@ input.link_btn,
 	opacity: 0;
 }
 .defence_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Agriculture-Coatings-1200x624-1.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Agriculture-Coatings-1200x624-1.jpg")
+		no-repeat;
 	background-size: 73%;
 	padding: 28% 0;
 	width: 100%;
@@ -482,7 +485,8 @@ input.link_btn,
 	opacity: 0;
 }
 .marine_img {
-	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Marine-Industry-Coatings-1200x800-1.jpg") no-repeat;
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Marine-Industry-Coatings-1200x800-1.jpg")
+		no-repeat;
 	background-size: 73%;
 	padding: 28% 0;
 	width: 100%;
@@ -583,30 +587,28 @@ a:focus {
 	transition: linear all 0.2s;
 }
 
-
-.pedestrian_icon{
+.pedestrian_icon {
 	rotate: -80deg;
 }
-.spray_icon{
+.spray_icon {
 	rotate: -80deg;
 }
-.cast_icon{
+.cast_icon {
 	rotate: -80deg;
 }
-.theme_icon{
+.theme_icon {
 	margin-top: -18.2%;
 	rotate: -150deg;
 }
-.marine_icon{
+.marine_icon {
 	rotate: -250deg;
 }
-.infrastructure_icon{
+.infrastructure_icon {
 	rotate: -250deg;
 }
-.spacialty_icon{
+.spacialty_icon {
 	rotate: -250deg;
 }
-
 
 .pedestrian_link {
 	color: #3480c1;
@@ -781,18 +783,31 @@ a:focus {
 	-ms-transform: rotate(337.5deg); /* IE 9 */
 	transform: rotate(337.5deg);
 }
-.link_btn_container{
-	padding-top: 8px;
+.link_btn_container {
+	margin-top: 8px;
+	position: relative;
+	background-color: red;
+	display: inline-block;
+	z-index: 5;
 }
 
-.link_btn{
+.link_btn {
 	font-size: 7px !important;
-	background: transparent !important;
-	padding: 3px 10px;
-	background-color: #0364A5 !important;
+	padding: 2px 5px 3px 20px;
+	background-color: #0364a5 !important;
 	border: none;
 	color: white;
 }
+
+.btn_icon {
+	width: 12px;
+	height: 120%;
+	background-color: white;
+	position: absolute;
+	clip-path: polygon(49% 100%, 100% 61%, 100% 0, 0 0, 0 61%);
+	left: 4px;
+}
+
 
 /* text  */
 @media screen and (max-width: 1440px) {
@@ -1190,7 +1205,8 @@ a:focus {
 	}
 
 	.transport_img {
-		background: url(https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg) no-repeat;
+		background: url(https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg)
+			no-repeat;
 		background-size: 73%;
 		padding: 50% 0%;
 		background-position: 50% 0%;
@@ -1211,7 +1227,7 @@ a:focus {
 		padding: 4px;
 	}
 	.division_box,
-.content_box1 {
+	.content_box1 {
 		padding: 10% 30% 20%;
 	}
 	.overlay-bg {
@@ -1226,15 +1242,15 @@ a:focus {
 		font-size: 8px !important;
 	}
 	.division_box,
-.content_box1 {
+	.content_box1 {
 		padding: 15% 28% 10%;
 	}
 
 	.pedestrian_link {
 		left: -21% !important;
 	}
-	.cast_link{
-		left: -16% !important
+	.cast_link {
+		left: -16% !important;
 	}
 
 	.overlay-bg {
@@ -1244,14 +1260,11 @@ a:focus {
 
 	.circle_box {
 		display: none !important;
-	
-}
+	}
 
-.mobile-circle_box {
-	display: table !important;
-}
-
-
+	.mobile-circle_box {
+		display: table !important;
+	}
 }
 @media screen and (max-width: 376px) {
 	.circle_text {
@@ -1263,21 +1276,18 @@ a:focus {
 		left: -23% !important;
 	}
 
-	.cast_link{
-		left: -23% !important
+	.cast_link {
+		left: -23% !important;
 	}
 
 	.division_box {
 		padding: 4px;
 	}
 
-
 	.division_box,
-.content_box1 {
-
-	padding: 10% 28% 10%;
-	
-}
+	.content_box1 {
+		padding: 10% 28% 10%;
+	}
 	.overlay-bg {
 		width: 130px;
 		height: 120px;
@@ -1293,21 +1303,18 @@ a:focus {
 		left: -35% !important;
 	}
 
-	.cast_link{
-		left: -30% !important
+	.cast_link {
+		left: -30% !important;
 	}
 
 	.division_box {
 		padding: 4px;
 	}
 
-
 	.division_box,
-.content_box1 {
-
-	padding: 13% 30% 10%;
-	
-}
+	.content_box1 {
+		padding: 13% 30% 10%;
+	}
 	.overlay-bg {
 		width: 100px;
 		height: 100px;
