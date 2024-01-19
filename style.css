@@ -1208,3 +1208,38 @@ a:focus {
 		height: 150px;
 	}
 }
+@media screen and (max-width: 300px) {
+	.circle_text {
+		left: -35% !important;
+		font-size: 6px !important;
+	}
+
+	.pedestrian_link {
+		left: -35% !important;
+	}
+
+	.division_box {
+		padding: 4px;
+	}
+
+
+	.division_box,
+.content_box1 {
+
+	padding: 13% 30% 10%;
+	
+}
+	.overlay-bg {
+		width: 100px;
+		height: 100px;
+	}
+
+	body,
+	p,
+	.link {
+		font-size: 5px;
+	}
+	.md_title {
+		font-size: 8px;
+	}
+}
