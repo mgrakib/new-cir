@@ -530,6 +530,16 @@ input.link_btn,
 	transform: rotate(-6.2deg);
 	top: 0;
 }
+.mobile-circle_box {
+	display: none !important;
+	width: 100%;
+	position: absolute;
+	display: table;
+	background: rgba(255, 0, 0, 0.3);
+	margin-top: 27%;
+	transform: rotate(-6.2deg);
+	top: 0;
+}
 .circle_blocks {
 	width: 100%;
 	position: absolute;
@@ -1219,6 +1229,17 @@ a:focus {
 		width: 180px;
 		height: 180px;
 	}
+
+	.circle_box {
+		display: none !important;
+	
+}
+
+.mobile-circle_box {
+	display: table !important;
+}
+
+
 }
 @media screen and (max-width: 376px) {
 	.circle_text {
