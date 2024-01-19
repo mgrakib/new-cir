@@ -323,7 +323,7 @@ input.link_btn,
 	width: 300px;
 	height: 300px;
 	position: absolute;
-	background-color: rgba(0, 0, 0, 0.646);
+	background-color: #0d88cb8c;
 	border-radius: 50%;
 	left: 50%;
 	top: 50%;
@@ -926,7 +926,7 @@ a:focus {
 	body,
 	p,
 	.link {
-		font-size: 8px;
+		font-size: 7px;
 	}
 	.manufacturing_link p,
 	.unprecedented_link p,
@@ -939,15 +939,15 @@ a:focus {
 	.cast_circle a,
 	.polyfill_circle a,
 	.circle_text {
-		font-size: 11px;
+		font-size: 10px;
 	}
 
 	.lg_title {
-		font-size: 12px;
+		font-size: 10px;
 	}
 
 	.md_title {
-		font-size: 10px;
+		font-size: 8px;
 	}
 	.list_title,
 	.normal_title,
@@ -1147,6 +1147,11 @@ a:focus {
 		padding: 50% 0%;
 		background-position: 50% 0%;
 	}
+
+	.overlay-bg {
+		width: 230px;
+		height: 220px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1170,11 +1175,18 @@ a:focus {
 @media screen and (max-width: 576px) {
 	.circle_text {
 		left: -20% !important;
-		font-size: 10px !important;
+		font-size: 8px !important;
 	}
 	.division_box,
 .content_box1 {
 		padding: 15% 28% 10%;
+	}
+
+	.pedestrian_link {
+		left: -21% !important;
+	}
+	.cast_link{
+		left: -16% !important
 	}
 
 	.overlay-bg {
@@ -1184,12 +1196,16 @@ a:focus {
 }
 @media screen and (max-width: 376px) {
 	.circle_text {
-		left: -20% !important;
+		left: -29% !important;
 		font-size: 7px !important;
 	}
 
 	.pedestrian_link {
-		left: -25% !important;
+		left: -23% !important;
+	}
+
+	.cast_link{
+		left: -23% !important
 	}
 
 	.division_box {
@@ -1200,12 +1216,12 @@ a:focus {
 	.division_box,
 .content_box1 {
 
-	padding: 13% 25% 10%;
+	padding: 10% 28% 10%;
 	
 }
 	.overlay-bg {
-		width: 150px;
-		height: 150px;
+		width: 130px;
+		height: 120px;
 	}
 }
 @media screen and (max-width: 300px) {
@@ -1216,6 +1232,10 @@ a:focus {
 
 	.pedestrian_link {
 		left: -35% !important;
+	}
+
+	.cast_link{
+		left: -30% !important
 	}
 
 	.division_box {
