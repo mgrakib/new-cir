@@ -573,6 +573,31 @@ a:focus {
 	transition: linear all 0.2s;
 }
 
+
+.pedestrian_icon{
+	rotate: -80deg;
+}
+.spray_icon{
+	rotate: -80deg;
+}
+.cast_icon{
+	rotate: -80deg;
+}
+.theme_icon{
+	margin-top: -18.2%;
+	rotate: -150deg;
+}
+.marine_icon{
+	rotate: -250deg;
+}
+.infrastructure_icon{
+	rotate: -250deg;
+}
+.spacialty_icon{
+	rotate: -250deg;
+}
+
+
 .pedestrian_link {
 	color: #3480c1;
 	margin-left: -20%;
@@ -591,6 +616,7 @@ a:focus {
 	margin-top: -20%;
 	color: #7fb953;
 }
+
 .recreation_link {
 	transform: rotate(-114deg);
 	margin-left: -20%;
