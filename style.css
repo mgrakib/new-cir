@@ -285,7 +285,8 @@ input.link_btn,
 	width: 40%;
 	display: table;
 	top: 30.8%;
-	left: 15%;
+	left: 50%;
+	transform: translateX(-50%);
 	position: absolute;
 }
 
@@ -295,7 +296,6 @@ input.link_btn,
 }
 
 .left-text-box {
-	display: none;
 	width: 100%;
 	/* height: 100px; */
 	position: relative;
@@ -320,7 +320,6 @@ input.link_btn,
 }
 
 .overlay-bg {
-	display: none;
 	width: 300px;
 	height: 300px;
 	position: absolute;
@@ -330,505 +329,6 @@ input.link_btn,
 	top: 50%;
 	transform: translate(-50%);
 }
-
-/* =============== */
-.Right_division_box {
-	width: 28%;
-	position: absolute;
-	z-index: 1;
-	padding: 7px;
-	display: table;
-	right: 2%;
-}
-
-.Right_division_box span {
-	display: block;
-	width: 100%;
-	background: #fff;
-	padding: 4%;
-}
-.Right_division_box h2 {
-	padding: 4% 0 4% 12%;
-}
-
-.Right_division_box p {
-	text-align: justify;
-}
-
-.Right_content_box1 {
-	width: 28%;
-	position: absolute;
-	z-index: 1;
-	padding: 7px;
-	display: table;
-	right: 2%;
-}
-.Right_content_box1 span {
-	display: block;
-	width: 100%;
-	background: #e8f7ff;
-	padding: 4%;
-	text-align: justify;
-}
-.Right_content_box1 h2 {
-	padding: 0% 0 4% 12%;
-}
-.Right_content_box1 p {
-	text-align: justify;
-}
-.Right_content_box1 ol,
-.Right_content_box1 ul {
-	margin-left: 30px;
-}
-
-.Right_pedestrian_box {
-	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4073b2+0,6fa7d8+100 */
-	background: #4073b2; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#4073b2 0%,
-		#6fa7d8 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#4073b2 0%,
-		#6fa7d8 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#4073b2 0%,
-		#6fa7d8 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b2', endColorstr='#6fa7d8',GradientType=1 ); /* IE6-9 */
-	top: 35%;
-	display: none;
-}
-
-.Right_pedestrian_box h2 {
-	background: url(images/pedestrian_icon.png) no-repeat;
-	background-size: 8%;
-	color: #3b89c7;
-	background-position: 0 50%;
-}
-.Right_pedestrian_box p {
-	color: #3b89c7;
-}
-
-.Right_spray_box {
-	background: #52b7cb; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#52b7cb 0%,
-		#92ced9 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#52b7cb 0%,
-		#92ced9 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#52b7cb 0%,
-		#92ced9 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b7cb', endColorstr='#92ced9',GradientType=1 ); /* IE6-9 */
-	top: 38%;
-	display: none;
-}
-
-.Right_spray_box h2 {
-	background: url(images/industrial_icon.png) no-repeat;
-	background-size: 8%;
-	color: #52b7cb;
-	background-position: 0 50%;
-}
-
-.Right_spray_box p {
-	color: #52b7cb;
-}
-
-.Right_cast_box {
-	background: #91be55; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#91be55 0%,
-		#b6d26b 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#91be55 0%,
-		#b6d26b 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#91be55 0%,
-		#b6d26b 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91be55', endColorstr='#b6d26b',GradientType=1 ); /* IE6-9 */
-	top: 39%;
-	display: none;
-}
-
-.Right_cast_box h2 {
-	background: url(images/cast_icon.png) no-repeat;
-	background-size: 8%;
-	color: #91be55;
-	background-position: 0 50%;
-}
-
-.Right_cast_box p {
-	color: #91be55;
-}
-
-.Right_recreation_box {
-	background: #e3803d; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#e3803d 0%,
-		#efae50 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#e3803d 0%,
-		#efae50 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#e3803d 0%,
-		#efae50 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3803d', endColorstr='#efae50',GradientType=1 ); /* IE6-9 */
-	top: 37%;
-	display: none;
-	background-position: 0 50%;
-}
-
-.Right_recreation_box h2 {
-	background: url(images/recreation_deco_icon.png) no-repeat;
-	background-size: 9%;
-	color: #e3803d;
-	background-position: 0 50%;
-}
-
-.Right_recreation_box p {
-	color: #e3803d;
-}
-
-.Right_theme_box {
-	background: #dd5b37; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#dd5b37 0%,
-		#e47f3b 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#dd5b37 0%,
-		#e47f3b 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#dd5b37 0%,
-		#e47f3b 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5b37', endColorstr='#e47f3b',GradientType=1 ); /* IE6-9 */
-	top: 36%;
-	display: none;
-}
-
-.Right_theme_box h2 {
-	background: url(images/theme_icon.png) no-repeat;
-	background-size: 8%;
-	color: #dd5b37;
-	background-position: 0 50%;
-}
-
-.Right_theme_box p {
-	color: #dd5b37;
-}
-
-.Right_raw_box {
-	background: #dd5b37; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#b7481c 0%,
-		#f04f26 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#b7481c 0%,
-		#f04f26 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#b7481c 0%,
-		#f04f26 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7481c', endColorstr='#f04f26',GradientType=1 ); /* IE6-9 */
-	top: 40%;
-	display: none;
-}
-
-.Right_raw_box h2 {
-	background: url(images/raw-color.png) no-repeat;
-	background-size: 8%;
-	color: #dd5b37;
-	background-position: 0 50%;
-}
-
-.Right_raw_box p {
-	color: #dd5b37;
-}
-
-.Right_polyfil_box {
-	background: #b6272d; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#b6272d 0%,
-		#ff3f47 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#b6272d 0%,
-		#ff3f47 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#b6272d 0%,
-		#ff3f47 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6272d', endColorstr='#ff3f47',GradientType=1 ); /* IE6-9 */
-	top: 37.5%;
-	display: none;
-}
-
-.Right_polyfil_box h2 {
-	background: url(images/poly_fil_icon.png) no-repeat;
-	background-size: 8%;
-	color: #752639;
-	background-position: 0 50%;
-}
-.Right_polyfil_box p {
-	color: #752639;
-}
-
-.Right_foam_box {
-	background: #a1387a; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#a1387a 0%,
-		#b6559a 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#a1387a 0%,
-		#b6559a 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#a1387a 0%,
-		#b6559a 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1387a', endColorstr='#b6559a',GradientType=1 ); /* IE6-9 */
-	top: 36%;
-	display: none;
-}
-
-.Right_foam_box h2 {
-	background: url(images/foam_icon.png) no-repeat;
-	background-size: 8%;
-	color: #a1387a;
-	background-position: 0 50%;
-}
-
-.Right_foam_box p {
-	color: #a1387a;
-}
-
-.Right_concrete_box {
-	background: #45388a; /* Old browsers */
-	background: -moz-linear-gradient(
-		left,
-		#45388a 0%,
-		#8e72ad 100%
-	); /* FF3.6-15 */
-	background: -webkit-linear-gradient(
-		left,
-		#45388a 0%,
-		#8e72ad 100%
-	); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(
-		to right,
-		#45388a 0%,
-		#8e72ad 100%
-	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45388a', endColorstr='#8e72ad',GradientType=1 ); /* IE6-9 */
-	top: 33%;
-	display: none;
-}
-
-.Right_concrete_box h2 {
-	background: url(images/concrete_icon.png) no-repeat;
-	background-size: 8%;
-	color: #45388a;
-	background-position: 0 50%;
-}
-
-.Right_concrete_box p {
-	color: #45388a;
-}
-
-.Right_construction_box {
-	background: #4073b2;
-	background: -moz-linear-gradient(left, #4073b2 0%, #6fa7d8 100%);
-	background: -webkit-linear-gradient(left, #4073b2 0%, #6fa7d8 100%);
-	background: linear-gradient(to right, #4073b2 0%, #6fa7d8 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b2', endColorstr='#6fa7d8',GradientType=1 );
-	color: #4073b2;
-	top: 39%;
-	display: none;
-}
-.Right_construction_box a {
-	color: #fff;
-}
-.Right_construction_box h2 {
-	background: url(images/Construction1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_containment_box {
-	background: #52b7cb;
-	background: -moz-linear-gradient(left, #52b7cb 0%, #92ced9 100%);
-	background: -webkit-linear-gradient(left, #52b7cb 0%, #92ced9 100%);
-	background: linear-gradient(to right, #52b7cb 0%, #92ced9 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b7cb', endColorstr='#92ced9',GradientType=1 );
-	color: #52b7cb;
-	top: 39%;
-	display: none;
-}
-.Right_containment_box a {
-	color: #fff;
-}
-.Right_containment_box h2 {
-	background: url(images/Containment_Liners1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_defence_box {
-	background: #91be55;
-	background: -moz-linear-gradient(left, #91be55 0%, #b6d26b 100%);
-	background: -webkit-linear-gradient(left, #91be55 0%, #b6d26b 100%);
-	background: linear-gradient(to right, #91be55 0%, #b6d26b 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91be55', endColorstr='#b6d26b',GradientType=1 );
-	color: #91be55;
-	top: 39%;
-	display: none;
-}
-.Right_defence_box a {
-	color: #fff;
-}
-.Right_defence_box h2 {
-	background: url(images/Defense1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_specialty_box {
-	background: #e3803d;
-	background: -moz-linear-gradient(left, #e3803d 0%, #efae50 100%);
-	background: -webkit-linear-gradient(left, #e3803d 0%, #efae50 100%);
-	background: linear-gradient(to right, #e3803d 0%, #efae50 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3803d', endColorstr='#efae50',GradientType=1 );
-
-	color: #e3803d;
-	top: 36%;
-	display: none;
-}
-.Right_specialty_box a {
-	color: #fff;
-}
-.Right_specialty_box h2 {
-	background: url(images/Industrial_Specialty1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_infrastructure_box {
-	background: #dd5b37;
-	background: -moz-linear-gradient(left, #dd5b37 0%, #e47f3b 100%);
-	background: -webkit-linear-gradient(left, #dd5b37 0%, #e47f3b 100%);
-	background: linear-gradient(to right, #dd5b37 0%, #e47f3b 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5b37', endColorstr='#e47f3b',GradientType=1 );
-
-	color: #dd5b37;
-	top: 39%;
-	display: none;
-}
-.Right_infrastructure_box a {
-	color: #fff;
-}
-.Right_infrastructure_box h2 {
-	background: url(images/Infrastructure1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_marine_box {
-	background: #752639;
-	background: -moz-linear-gradient(left, #752639 0%, #ca4073 100%);
-	background: -webkit-linear-gradient(left, #752639 0%, #ca4073 100%);
-	background: linear-gradient(to right, #752639 0%, #ca4073 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#752639', endColorstr='#ca4073',GradientType=1 );
-
-	color: #752639;
-	top: 39%;
-	display: none;
-}
-.Right_marine_box a {
-	color: #fff;
-}
-.Right_marine_box h2 {
-	background: url(images/Marine_Mining1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_oil_gas_box {
-	background: #a1387a;
-	background: -moz-linear-gradient(left, #a1387a 0%, #b6559a 100%);
-	background: -webkit-linear-gradient(left, #a1387a 0%, #b6559a 100%);
-	background: linear-gradient(to right, #a1387a 0%, #b6559a 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1387a', endColorstr='#b6559a',GradientType=1 );
-
-	color: #a1387a;
-	top: 39%;
-	display: none;
-}
-.Right_oil_gas_box a {
-	color: #fff;
-}
-.Right_oil_gas_box h2 {
-	background: url(images/Oil_Gas1.png) no-repeat;
-	background-size: 8%;
-}
-
-.Right_transport_box {
-	background: #45388a;
-	background: -moz-linear-gradient(left, #45388a 0%, #8e72ad 100%);
-	background: -webkit-linear-gradient(left, #45388a 0%, #8e72ad 100%);
-	background: linear-gradient(to right, #45388a 0%, #8e72ad 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45388a', endColorstr='#8e72ad',GradientType=1 );
-
-	color: #45388a;
-	top: 38%;
-	display: none;
-}
-.Right_transport_box a {
-	color: #fff;
-}
-.Right_transport_box h2 {
-	background: url(images/Transporation1.png) no-repeat;
-	background-size: 8%;
-}
-
-/* ============== */
-
 
 .circle_img {
 	background: url("https://polycoatusa.com/images/waterproofing_bg.jpg")
@@ -1388,7 +888,7 @@ a:focus {
 	body,
 	p,
 	.link {
-		font-size: 9px;
+		font-size: 7px;
 	}
 	.manufacturing_link p,
 	.unprecedented_link p,
@@ -1409,7 +909,7 @@ a:focus {
 	}
 
 	.md_title {
-		font-size: 10px;
+		font-size: 9px;
 	}
 	.list_title,
 	.normal_title,
@@ -1668,35 +1168,19 @@ a:focus {
 }
 
 @media screen and (max-width: 576px) {
-	.Right_division_box, .Right_content_box1{
-		display: none !important;
-	}
 	.circle_text {
 		left: -20% !important;
 		font-size: 10px !important;
 	}
 	.division_box,
 .content_box1 {
-		padding: 6% 25% 15%;
+		padding: 15% 28% 10%;
 	}
 
 	.overlay-bg {
-		display: block;
 		width: 180px;
 		height: 180px;
 	}
-
-	.wheel_box {
-	
-	left: 50%;
-	transform: translateX(-50%);
-	
-}
-.left-text-box {
-	display: block;
-
-}
-	
 }
 @media screen and (max-width: 376px) {
 	.circle_text {
@@ -1716,7 +1200,7 @@ a:focus {
 	.division_box,
 .content_box1 {
 
-	padding: 8% 15% 10%;
+	padding: 13% 25% 10%;
 	
 }
 	.overlay-bg {
