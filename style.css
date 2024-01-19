@@ -1,0 +1,1726 @@
+/** @format */
+
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.overlay-bg {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	background-color: #0264a583;
+	border-radius: 50%;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%);
+}
+
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/** @format */
+
+body,
+p,
+.link,
+.page_list li a {
+	font-family: "Avenir";
+	font-size: 15px;
+}
+
+.circle_blocks a,
+.waterproofing_circle a,
+.cast_circle a,
+.polyfill_circle a,
+.circle_text {
+	font-size: 16px;
+	font-family: "Avenir Heavy";
+	font-weight: 500;
+}
+
+.lg_title {
+	font-size: 28px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+.normal_title,
+.list_title,
+.page_list li {
+	font-size: 18px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+.md_title,
+.link_btn,
+input.link_btn,
+.quick_links,
+.master_links {
+	font-size: 24px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+
+.sm_title {
+	font-size: 18px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+
+.container-fluid {
+	padding: 0px;
+	overflow: hidden;
+}
+.banner_btn {
+	position: absolute;
+	z-index: 1;
+	right: 9%;
+	top: 140px;
+	width: 90%;
+}
+.menu_bar li a,
+.header_content a,
+.header_content input {
+	font-family: "Avenir";
+	font-size: 17px;
+}
+.error {
+	color: #c00 !important;
+}
+.quick_links {
+	color: #fff;
+	float: right;
+	border-radius: 10px;
+	display: table;
+	box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+	background: #4a7fbb;
+	text-align: center;
+	font-size: 18px;
+	padding: 7px 30px;
+	transition: all linear 0.2s;
+	-webkit-animation: glowing 1000ms infinite;
+	-moz-animation: glowing 1000ms infinite;
+	-o-animation: glowing 1000ms infinite;
+	animation: glowing 1000ms infinite;
+	margin-right: 30px;
+}
+
+.circle_pull {
+	display: table;
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+
+.waterproofing_block {
+	width: 100%;
+	display: table;
+	/* background: url("https://polycoatusa.com/images/molecule.jpg") no-repeat; */
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.waterproofing_banner h1 {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0075bd+0,5ea8dc+100&0.8+0,0.8+100 */
+	background: -moz-linear-gradient(
+		left,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0075bd', endColorstr='#cc5ea8dc',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+	display: table;
+}
+
+.waterproofing_banner h1 span {
+	background-image: url(../images/Pedestrian_icon_white.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	display: block;
+	padding: 15px 40px 20px 146px;
+	background-position: 44px 10px;
+}
+.waterproofing_gradient {
+	background: #0075bd; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0075bd', endColorstr='#5ea8dc',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+}
+
+.industrial_text {
+	width: 100%;
+	display: table;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.main_container {
+	width: 100%;
+	padding: 0 15px;
+	max-width: 1400px;
+	margin: 0px auto;
+}
+
+.title {
+	margin-top: 1.2em;
+	text-align: center;
+	margin-bottom: 1.1em;
+}
+
+.home_title {
+	color: #0d8acb !important;
+}
+
+.lg_title {
+	font-size: 28px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+.content {
+	color: #221f20;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.industries_bg {
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+.top_text {
+	color: #3b89c7;
+	position: absolute;
+	top: 6%;
+	width: 155px;
+	left: 5%;
+}
+
+.md_title,
+.link_btn,
+input.link_btn,
+.quick_links,
+.master_links {
+	font-size: 24px;
+	font-family: "Avenir Heavy";
+	font-weight: 900;
+}
+
+.bottom_text {
+	color: #fff;
+	position: absolute;
+	bottom: 6%;
+	width: 155px;
+	left: 5%;
+}
+
+.industries_bg {
+	position: relative;
+	display: table;
+	width: 100%;
+
+	/*		background: url(images/waterproofing_bg.png) no-repeat;*/
+	/*	background-size: cover;*/
+}
+.industries_bg_up {
+	background: rgba(255, 255, 255, 0.8);
+	display: table;
+	width: 100%;
+	padding-bottom: 28%;
+}
+.top_text {
+	color: #3b89c7;
+	position: absolute;
+	top: 6%;
+	width: 155px;
+	left: 5%;
+}
+.bottom_text {
+	color: #fff;
+	position: absolute;
+	bottom: 6%;
+	width: 155px;
+	left: 5%;
+}
+.industries_bg_down {
+	/* background: rgba(13, 138, 203, 0.8); */
+	display: table;
+	width: 100%;
+	padding-bottom: 28%;
+}
+.wheel_box {
+	width: 40%;
+	display: table;
+	top: 30.8%;
+	left: 15%;
+	position: absolute;
+}
+
+.circle_image_box {
+	width: 100%;
+	position: relative;
+}
+
+.left-text-box {
+	display: none;
+	width: 100%;
+	/* height: 100px; */
+	position: relative;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.559);
+	border-radius: 50%;
+}
+
+.division_box,
+.content_box1 {
+	color: white;
+	background-size: 69%;
+	padding: 10% 30% 20%;
+	text-align: center;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 1;
+	top: 0px;
+	left: 3px;
+	border-radius: 50%;
+}
+
+.overlay-bg {
+	display: none;
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.646);
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+}
+
+/* =============== */
+.Right_division_box {
+	width: 28%;
+	position: absolute;
+	z-index: 1;
+	padding: 7px;
+	display: table;
+	right: 2%;
+}
+
+.Right_division_box span {
+	display: block;
+	width: 100%;
+	background: #fff;
+	padding: 4%;
+}
+.Right_division_box h2 {
+	padding: 4% 0 4% 12%;
+}
+
+.Right_division_box p {
+	text-align: justify;
+}
+
+.Right_content_box1 {
+	width: 28%;
+	position: absolute;
+	z-index: 1;
+	padding: 7px;
+	display: table;
+	right: 2%;
+}
+.Right_content_box1 span {
+	display: block;
+	width: 100%;
+	background: #e8f7ff;
+	padding: 4%;
+	text-align: justify;
+}
+.Right_content_box1 h2 {
+	padding: 0% 0 4% 12%;
+}
+.Right_content_box1 p {
+	text-align: justify;
+}
+.Right_content_box1 ol,
+.Right_content_box1 ul {
+	margin-left: 30px;
+}
+
+.Right_pedestrian_box {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4073b2+0,6fa7d8+100 */
+	background: #4073b2; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#4073b2 0%,
+		#6fa7d8 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#4073b2 0%,
+		#6fa7d8 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#4073b2 0%,
+		#6fa7d8 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b2', endColorstr='#6fa7d8',GradientType=1 ); /* IE6-9 */
+	top: 35%;
+	display: none;
+}
+
+.Right_pedestrian_box h2 {
+	background: url(images/pedestrian_icon.png) no-repeat;
+	background-size: 8%;
+	color: #3b89c7;
+	background-position: 0 50%;
+}
+.Right_pedestrian_box p {
+	color: #3b89c7;
+}
+
+.Right_spray_box {
+	background: #52b7cb; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#52b7cb 0%,
+		#92ced9 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#52b7cb 0%,
+		#92ced9 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#52b7cb 0%,
+		#92ced9 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b7cb', endColorstr='#92ced9',GradientType=1 ); /* IE6-9 */
+	top: 38%;
+	display: none;
+}
+
+.Right_spray_box h2 {
+	background: url(images/industrial_icon.png) no-repeat;
+	background-size: 8%;
+	color: #52b7cb;
+	background-position: 0 50%;
+}
+
+.Right_spray_box p {
+	color: #52b7cb;
+}
+
+.Right_cast_box {
+	background: #91be55; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#91be55 0%,
+		#b6d26b 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#91be55 0%,
+		#b6d26b 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#91be55 0%,
+		#b6d26b 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91be55', endColorstr='#b6d26b',GradientType=1 ); /* IE6-9 */
+	top: 39%;
+	display: none;
+}
+
+.Right_cast_box h2 {
+	background: url(images/cast_icon.png) no-repeat;
+	background-size: 8%;
+	color: #91be55;
+	background-position: 0 50%;
+}
+
+.Right_cast_box p {
+	color: #91be55;
+}
+
+.Right_recreation_box {
+	background: #e3803d; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#e3803d 0%,
+		#efae50 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#e3803d 0%,
+		#efae50 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#e3803d 0%,
+		#efae50 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3803d', endColorstr='#efae50',GradientType=1 ); /* IE6-9 */
+	top: 37%;
+	display: none;
+	background-position: 0 50%;
+}
+
+.Right_recreation_box h2 {
+	background: url(images/recreation_deco_icon.png) no-repeat;
+	background-size: 9%;
+	color: #e3803d;
+	background-position: 0 50%;
+}
+
+.Right_recreation_box p {
+	color: #e3803d;
+}
+
+.Right_theme_box {
+	background: #dd5b37; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#dd5b37 0%,
+		#e47f3b 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#dd5b37 0%,
+		#e47f3b 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#dd5b37 0%,
+		#e47f3b 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5b37', endColorstr='#e47f3b',GradientType=1 ); /* IE6-9 */
+	top: 36%;
+	display: none;
+}
+
+.Right_theme_box h2 {
+	background: url(images/theme_icon.png) no-repeat;
+	background-size: 8%;
+	color: #dd5b37;
+	background-position: 0 50%;
+}
+
+.Right_theme_box p {
+	color: #dd5b37;
+}
+
+.Right_raw_box {
+	background: #dd5b37; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#b7481c 0%,
+		#f04f26 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#b7481c 0%,
+		#f04f26 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#b7481c 0%,
+		#f04f26 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7481c', endColorstr='#f04f26',GradientType=1 ); /* IE6-9 */
+	top: 40%;
+	display: none;
+}
+
+.Right_raw_box h2 {
+	background: url(images/raw-color.png) no-repeat;
+	background-size: 8%;
+	color: #dd5b37;
+	background-position: 0 50%;
+}
+
+.Right_raw_box p {
+	color: #dd5b37;
+}
+
+.Right_polyfil_box {
+	background: #b6272d; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#b6272d 0%,
+		#ff3f47 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#b6272d 0%,
+		#ff3f47 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#b6272d 0%,
+		#ff3f47 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6272d', endColorstr='#ff3f47',GradientType=1 ); /* IE6-9 */
+	top: 37.5%;
+	display: none;
+}
+
+.Right_polyfil_box h2 {
+	background: url(images/poly_fil_icon.png) no-repeat;
+	background-size: 8%;
+	color: #752639;
+	background-position: 0 50%;
+}
+.Right_polyfil_box p {
+	color: #752639;
+}
+
+.Right_foam_box {
+	background: #a1387a; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#a1387a 0%,
+		#b6559a 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#a1387a 0%,
+		#b6559a 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#a1387a 0%,
+		#b6559a 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1387a', endColorstr='#b6559a',GradientType=1 ); /* IE6-9 */
+	top: 36%;
+	display: none;
+}
+
+.Right_foam_box h2 {
+	background: url(images/foam_icon.png) no-repeat;
+	background-size: 8%;
+	color: #a1387a;
+	background-position: 0 50%;
+}
+
+.Right_foam_box p {
+	color: #a1387a;
+}
+
+.Right_concrete_box {
+	background: #45388a; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#45388a 0%,
+		#8e72ad 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#45388a 0%,
+		#8e72ad 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#45388a 0%,
+		#8e72ad 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45388a', endColorstr='#8e72ad',GradientType=1 ); /* IE6-9 */
+	top: 33%;
+	display: none;
+}
+
+.Right_concrete_box h2 {
+	background: url(images/concrete_icon.png) no-repeat;
+	background-size: 8%;
+	color: #45388a;
+	background-position: 0 50%;
+}
+
+.Right_concrete_box p {
+	color: #45388a;
+}
+
+.Right_construction_box {
+	background: #4073b2;
+	background: -moz-linear-gradient(left, #4073b2 0%, #6fa7d8 100%);
+	background: -webkit-linear-gradient(left, #4073b2 0%, #6fa7d8 100%);
+	background: linear-gradient(to right, #4073b2 0%, #6fa7d8 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4073b2', endColorstr='#6fa7d8',GradientType=1 );
+	color: #4073b2;
+	top: 39%;
+	display: none;
+}
+.Right_construction_box a {
+	color: #fff;
+}
+.Right_construction_box h2 {
+	background: url(images/Construction1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_containment_box {
+	background: #52b7cb;
+	background: -moz-linear-gradient(left, #52b7cb 0%, #92ced9 100%);
+	background: -webkit-linear-gradient(left, #52b7cb 0%, #92ced9 100%);
+	background: linear-gradient(to right, #52b7cb 0%, #92ced9 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b7cb', endColorstr='#92ced9',GradientType=1 );
+	color: #52b7cb;
+	top: 39%;
+	display: none;
+}
+.Right_containment_box a {
+	color: #fff;
+}
+.Right_containment_box h2 {
+	background: url(images/Containment_Liners1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_defence_box {
+	background: #91be55;
+	background: -moz-linear-gradient(left, #91be55 0%, #b6d26b 100%);
+	background: -webkit-linear-gradient(left, #91be55 0%, #b6d26b 100%);
+	background: linear-gradient(to right, #91be55 0%, #b6d26b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#91be55', endColorstr='#b6d26b',GradientType=1 );
+	color: #91be55;
+	top: 39%;
+	display: none;
+}
+.Right_defence_box a {
+	color: #fff;
+}
+.Right_defence_box h2 {
+	background: url(images/Defense1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_specialty_box {
+	background: #e3803d;
+	background: -moz-linear-gradient(left, #e3803d 0%, #efae50 100%);
+	background: -webkit-linear-gradient(left, #e3803d 0%, #efae50 100%);
+	background: linear-gradient(to right, #e3803d 0%, #efae50 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3803d', endColorstr='#efae50',GradientType=1 );
+
+	color: #e3803d;
+	top: 36%;
+	display: none;
+}
+.Right_specialty_box a {
+	color: #fff;
+}
+.Right_specialty_box h2 {
+	background: url(images/Industrial_Specialty1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_infrastructure_box {
+	background: #dd5b37;
+	background: -moz-linear-gradient(left, #dd5b37 0%, #e47f3b 100%);
+	background: -webkit-linear-gradient(left, #dd5b37 0%, #e47f3b 100%);
+	background: linear-gradient(to right, #dd5b37 0%, #e47f3b 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd5b37', endColorstr='#e47f3b',GradientType=1 );
+
+	color: #dd5b37;
+	top: 39%;
+	display: none;
+}
+.Right_infrastructure_box a {
+	color: #fff;
+}
+.Right_infrastructure_box h2 {
+	background: url(images/Infrastructure1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_marine_box {
+	background: #752639;
+	background: -moz-linear-gradient(left, #752639 0%, #ca4073 100%);
+	background: -webkit-linear-gradient(left, #752639 0%, #ca4073 100%);
+	background: linear-gradient(to right, #752639 0%, #ca4073 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#752639', endColorstr='#ca4073',GradientType=1 );
+
+	color: #752639;
+	top: 39%;
+	display: none;
+}
+.Right_marine_box a {
+	color: #fff;
+}
+.Right_marine_box h2 {
+	background: url(images/Marine_Mining1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_oil_gas_box {
+	background: #a1387a;
+	background: -moz-linear-gradient(left, #a1387a 0%, #b6559a 100%);
+	background: -webkit-linear-gradient(left, #a1387a 0%, #b6559a 100%);
+	background: linear-gradient(to right, #a1387a 0%, #b6559a 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1387a', endColorstr='#b6559a',GradientType=1 );
+
+	color: #a1387a;
+	top: 39%;
+	display: none;
+}
+.Right_oil_gas_box a {
+	color: #fff;
+}
+.Right_oil_gas_box h2 {
+	background: url(images/Oil_Gas1.png) no-repeat;
+	background-size: 8%;
+}
+
+.Right_transport_box {
+	background: #45388a;
+	background: -moz-linear-gradient(left, #45388a 0%, #8e72ad 100%);
+	background: -webkit-linear-gradient(left, #45388a 0%, #8e72ad 100%);
+	background: linear-gradient(to right, #45388a 0%, #8e72ad 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45388a', endColorstr='#8e72ad',GradientType=1 );
+
+	color: #45388a;
+	top: 38%;
+	display: none;
+}
+.Right_transport_box a {
+	color: #fff;
+}
+.Right_transport_box h2 {
+	background: url(images/Transporation1.png) no-repeat;
+	background-size: 8%;
+}
+
+/* ============== */
+
+
+.circle_img {
+	background: url("https://polycoatusa.com/images/waterproofing_bg.jpg")
+		no-repeat;
+	background-size: 69%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 1;
+	top: -20px;
+	left: 3px;
+}
+
+.pedestrian_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/polyurea-waterproofing-1.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.spray_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg") no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.cast_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Military-Blast-Mitigation-1200.jpg") no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 20%;
+	position: absolute;
+	opacity: 0;
+}
+.recreation_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Oil-Industry-Coatings-1200x641-1.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.theme_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/armorthane-polyurea-water-feature-coatings-6-6509ac4ea43a1.jpg") no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 20%;
+	position: absolute;
+	opacity: 0;
+}
+.raw_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Construction-Application-ArmorThane-Polyurea-6.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 40%;
+	position: absolute;
+	opacity: 1;
+	top: -20px;
+	left: 3px;
+}
+
+.poly_fil_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/prop-making-main.jpg") no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.foam_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/glo-water-reservoir-waterproofing-01-1-1.jpg") no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.construction_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/seamless-rv-roof-coatning.jpg") no-repeat;
+	background-size: 100%;
+	padding: 38% 0;
+	width: 94%;
+	background-position: 50% 3%;
+	position: absolute;
+	border-radius: 500px;
+	left: 3%;
+	opacity: 0;
+}
+.concrete_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Mine-Equipment-Coatings-Backup.jpg") no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+
+.containment_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Roof-Coatings.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.defence_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Agriculture-Coatings-1200x624-1.jpg") no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.infrastructure_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Manufacturing-Backup-1200.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 4%;
+	position: absolute;
+	opacity: 0;
+}
+.specialty_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Floor-Coatings-Main-1200.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.marine_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Marine-Industry-Coatings-1200x800-1.jpg") no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+
+.oil_gas_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Spray-On-Bedliner-1200.jpg.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 22%;
+	position: absolute;
+	opacity: 0;
+}
+
+.transport_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Spray-Foam-1200.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.circle_text {
+	position: absolute;
+	margin-left: -27%;
+	width: 200px;
+	transform: rotate(6deg);
+	margin-top: -23%;
+	text-align: center;
+	transition: linear all 0.2s;
+}
+.circle_box {
+	width: 100%;
+	position: absolute;
+	display: table;
+	background: rgba(255, 0, 0, 0.3);
+	margin-top: 27%;
+	transform: rotate(-6.2deg);
+	top: 0;
+}
+.circle_blocks {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+.circle_blocks a {
+	left: -1%;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
+.circle_blocks_img {
+	transform: rotate(-72.5deg);
+	width: 20%;
+	display: block;
+	margin-top: -24%;
+	margin-left: 3.4%;
+	transition: all linear 0.2s;
+}
+.circle_blocks_img:hover {
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+.circle_icon {
+	display: table;
+	width: 0%;
+	padding: 4.7% 4.1%;
+	position: relative;
+	z-index: 5;
+	margin-top: -16.2%;
+	margin-left: 9.3%;
+	transition: linear all 0.2s;
+}
+
+.pedestrian_link {
+	color: #3480c1;
+	margin-left: -20%;
+	transform: rotate(-54.5deg);
+	margin-top: -18%;
+}
+.industrial_link {
+	transform: rotate(-74deg);
+	margin-top: -20%;
+	color: #51b6ca;
+	margin-left: -20%;
+}
+.cast_link {
+	transform: rotate(-94deg);
+	margin-left: -20%;
+	margin-top: -20%;
+	color: #7fb953;
+}
+.recreation_link {
+	transform: rotate(-114deg);
+	margin-left: -20%;
+	color: #eea74b;
+}
+.theme_link {
+	transform: rotate(-135deg);
+	margin-left: -20%;
+	color: #df643b;
+}
+.raw_link {
+	transform: rotate(-154deg);
+	margin-left: -20%;
+	color: #df643b;
+}
+.polyfill_link {
+	transform: rotate(6deg);
+	margin-top: -17%;
+	margin-left: -25%;
+	color: #b6272d;
+}
+.spray_link {
+	transform: rotate(346.5deg);
+	margin-top: -19%;
+	margin-left: -24%;
+	color: #cd3e73;
+}
+.concrete_link {
+	transform: rotate(326deg);
+	margin-left: -20%;
+	margin-top: -16%;
+	color: #5e318c;
+}
+.transport_link {
+	color: #f8a33c;
+	transform: rotate(-174deg);
+	margin-left: -20%;
+	margin-top: -17%;
+}
+.oil_link {
+	color: #f8a33c;
+	transform: rotate(165deg);
+	margin-top: -17%;
+	margin-left: -20%;
+}
+.mining_link {
+	color: #b8556c;
+	transform: rotate(142deg);
+	margin-top: -20%;
+	margin-left: -20%;
+}
+.infrastructure_link {
+	color: #365441;
+	transform: rotate(119deg);
+	margin-left: -20%;
+	margin-top: -17%;
+}
+.spacialty_link {
+	color: #b6272d;
+	transform: rotate(97deg);
+	margin-top: -20%;
+	margin-left: -24%;
+}
+.defence_link {
+	color: #f04f26;
+	transform: rotate(74deg);
+	margin-left: -20%;
+}
+.containment_link {
+	color: #f47a22;
+	transform: rotate(51deg);
+	margin-left: -20%;
+}
+.construction_link {
+	color: #ff6d00;
+	transform: rotate(29deg);
+	margin-left: -20%;
+}
+
+.circle_pull {
+	display: table;
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+.pedestrian {
+	-ms-transform: rotate(60deg); /* IE 9 */
+	transform: rotate(60deg);
+}
+
+.elastomers {
+	-ms-transform: rotate(80deg); /* IE 9 */
+	transform: rotate(80deg);
+}
+.cast {
+	-ms-transform: rotate(100deg); /* IE 9 */
+	transform: rotate(100deg);
+}
+.recreation {
+	-ms-transform: rotate(120deg); /* IE 9 */
+	transform: rotate(120deg);
+}
+.theme {
+	-ms-transform: rotate(157.5deg); /* IE 9 */
+	transform: rotate(140deg);
+}
+.raw {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	transform: rotate(160deg);
+}
+.polyfil {
+	-ms-transform: rotate(0deg); /* IE 9 */
+	transform: rotate(0deg);
+}
+.foam {
+	-ms-transform: rotate(19deg); /* IE 9 */
+	transform: rotate(19deg);
+}
+.concrete {
+	-ms-transform: rotate(38deg); /* IE 9 */
+	transform: rotate(38deg);
+}
+.transport {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	transform: rotate(180deg);
+}
+.oil_gas {
+	-ms-transform: rotate(202.5deg); /* IE 9 */
+	transform: rotate(202.5deg);
+}
+.marine {
+	-ms-transform: rotate(225deg); /* IE 9 */
+	transform: rotate(225deg);
+}
+.infrastructure {
+	-ms-transform: rotate(247.5deg); /* IE 9 */
+	transform: rotate(247.5deg);
+}
+.spacialty {
+	-ms-transform: rotate(270deg); /* IE 9 */
+	transform: rotate(270deg);
+}
+.defence {
+	-ms-transform: rotate(292.5deg); /* IE 9 */
+	transform: rotate(292.5deg);
+}
+.containment {
+	-ms-transform: rotate(315deg); /* IE 9 */
+	transform: rotate(315deg);
+}
+.construction {
+	-ms-transform: rotate(337.5deg); /* IE 9 */
+	transform: rotate(337.5deg);
+}
+
+/* text  */
+@media screen and (max-width: 1440px) {
+	.caption {
+		width: 65.5%;
+	}
+
+	.header_content {
+		width: 54%;
+	}
+	body,
+	p,
+	.link,
+	.page_list li a {
+		font-size: 14px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 14px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 13px;
+	}
+
+	.lg_title {
+		font-size: 25px;
+	}
+
+	.md_title {
+		font-size: 21px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.menu_bar li a,
+	.header_content a,
+	.header_content input,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.menu_bar {
+		margin-top: 76px;
+	}
+	.header_content {
+		width: 57%;
+	}
+	body,
+	p,
+	.link,
+	.header_content input,
+	.page_list li a {
+		font-size: 12px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 12px;
+	}
+
+	.lg_title {
+		font-size: 23px;
+	}
+	.md_title {
+		font-size: 20px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.menu_bar li a,
+	.header_content a,
+	.header_content input,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	body,
+	p,
+	.link {
+		font-size: 11px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 11px;
+	}
+
+	.lg_title {
+		font-size: 12px;
+	}
+
+	.md_title {
+		font-size: 14px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 576px) {
+	body,
+	p,
+	.link {
+		font-size: 9px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 11px;
+	}
+
+	.lg_title {
+		font-size: 12px;
+	}
+
+	.md_title {
+		font-size: 10px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 376px) {
+	body,
+	p,
+	.link {
+		font-size: 8px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 11px;
+	}
+
+	.lg_title {
+		font-size: 12px;
+	}
+
+	.md_title {
+		font-size: 10px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+
+/* box  */
+
+@media screen and (max-width: 1590px) {
+	.circle_text {
+		width: 150px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.polyfil_box,
+	.transport_box {
+		top: 35.5%;
+	}
+	.foam_box,
+	.theme_box {
+		top: 32%;
+	}
+	.concrete_box {
+		top: 29%;
+	}
+	.pedestrian_box {
+		top: 31%;
+	}
+	.spray_box {
+		top: 36%;
+	}
+	.cast_box,
+	.marine_box,
+	.infrastructure_box {
+		top: 37%;
+	}
+	.specialty_box {
+		top: 34%;
+	}
+	.recreation_box {
+		top: 30%;
+	}
+
+	.oil_gas_box,
+	.defence_box,
+	.containment_box {
+		top: 36.5%;
+	}
+	.construction_box {
+		top: 37%;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.circle_text {
+		width: 136px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.wheel_box {
+		width: 60%;
+		display: table;
+		top: 32.7%;
+		left: 50%;
+		position: absolute;
+	}
+
+	.overlay-bg {
+		width: 400px;
+		height: 400px;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.industries_bg_up,
+	.industries_bg_down {
+		padding-bottom: 46.6%;
+	}
+	.circle_img {
+		background: url("https://polycoatusa.com/images/waterproofing_bg.jpg")
+			no-repeat;
+		background-size: 68%;
+		padding: 50% 0;
+		background-position: 50% -1%;
+	}
+	.pedestrian_img {
+		background: url(images/PPC_20160822_0002.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0;
+		background-position: 50% 1%;
+	}
+	.spray_img {
+		background: url(images/spray_bg.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.cast_img {
+		background: url(images/castStock.jpeg) no-repeat;
+		background-size: 79%;
+		padding: 50% 0%;
+		background-position: 50% 1%;
+	}
+	.recreation_img {
+		background: url(images/Recreation-img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.theme_img {
+		background: url(images/disney-theme.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.raw_img {
+		background: url(images/disney-theme.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.poly_fil_img {
+		background: url(images/poly_fil_img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.foam_img {
+		background: url(images/foam_img.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.construction_img {
+		background: url(images/DJI_0002.jpg) no-repeat;
+		background-size: 119%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+		border-radius: 500px;
+		width: 80%;
+		left: 8%;
+	}
+	.concrete_img {
+		background: url(images/concrete_img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+
+	.containment_img {
+		background: url(images/gas-tanks-and-containers.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.defence_img {
+		background: url(images/defence_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.infrastructure_img {
+		background: url(images/landscape-5313115_1920.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 1%;
+	}
+	.specialty_img {
+		background: url(images/industries_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.marine_img {
+		background: url(images/marine_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+
+	.oil_gas_img {
+		background: url(images/refinery-109025_1920.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+
+	.transport_img {
+		background: url(https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.circle_text {
+		left: -10% !important;
+		font-size: 10px !important;
+	}
+	.division_box {
+		padding: 4px;
+	}
+	.division_box,
+.content_box1 {
+		padding: 10% 30% 20%;
+	}
+	.overlay-bg {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.Right_division_box, .Right_content_box1{
+		display: none !important;
+	}
+	.circle_text {
+		left: -20% !important;
+		font-size: 10px !important;
+	}
+	.division_box,
+.content_box1 {
+		padding: 6% 25% 15%;
+	}
+
+	.overlay-bg {
+		display: block;
+		width: 180px;
+		height: 180px;
+	}
+
+	.wheel_box {
+	
+	left: 50%;
+	transform: translateX(-50%);
+	
+}
+.left-text-box {
+	display: block;
+
+}
+	
+}
+@media screen and (max-width: 376px) {
+	.circle_text {
+		left: -20% !important;
+		font-size: 7px !important;
+	}
+
+	.pedestrian_link {
+		left: -25% !important;
+	}
+
+	.division_box {
+		padding: 4px;
+	}
+
+
+	.division_box,
+.content_box1 {
+
+	padding: 8% 15% 10%;
+	
+}
+	.overlay-bg {
+		width: 150px;
+		height: 150px;
+	}
+}
