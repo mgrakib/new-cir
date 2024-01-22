@@ -78,7 +78,7 @@ input.link_btn,
 }
 
 .mobile_link_btn{
-	display: none;
+	display: none !important;
 	width: 55px;
 	z-index: 999999 !important;
 	height: '8px';
@@ -1275,7 +1275,7 @@ a:focus {
 
 @media screen and (max-width: 576px) {
 	.mobile_link_btn{
-	display: block;
+	display: block !important;
 	
 
 }
