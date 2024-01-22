@@ -1,3 +1,4 @@
+
 <!-- @format -->
 
 <!DOCTYPE html>
@@ -9,10 +10,1380 @@
 			content="width=device-width, initial-scale=1.0"
 		/>
 		<title>Circle</title>
-		<link
-			rel="stylesheet"
-			href="style.css"
-		/>
+	
+		<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+		
+		<style>
+		    /** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.overlay-bg {
+	width: 400px;
+	height: 400px;
+	position: absolute;
+	background-color: #0264a583;
+	border-radius: 50%;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%);
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+/** @format */
+
+body,
+p,
+.link,
+.page_list li a {
+	font-family: "Barlow", sans-serif;
+	font-size: 15px;
+}
+
+.circle_blocks a,
+.waterproofing_circle a,
+.cast_circle a,
+.polyfill_circle a,
+.circle_text {
+	font-size: 16px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 500;
+}
+
+.lg_title {
+	font-size: 28px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+.normal_title,
+.list_title,
+.page_list li {
+	font-size: 18px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+.md_title,
+.link_btn,
+input.link_btn,
+.quick_links,
+.master_links {
+	font-size: 24px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+
+.sm_title {
+	font-size: 18px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+
+.container-fluid {
+	padding: 0px;
+	overflow: hidden;
+}
+
+.mobile_link_btn{
+	display: none !important;
+	/* width: 55px; */
+	z-index: 999999 !important;
+	height: '8px';
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin: 3px auto 0;
+	position: relative;
+
+}
+
+.mobile_link_btn_content{
+	display: inline-block;
+	background-color: #F9CF36;
+	padding: 3px 8px 4px 8px;
+	text-align: right;
+    color: black;
+}
+
+
+
+.btn_text{
+	font-size: 6px !important;
+    font-weight: bold;
+}
+
+.menu_bar li a,
+.header_content a,
+.header_content input {
+	font-family: "Barlow", sans-serif;
+	font-size: 17px;
+}
+.error {
+	color: #c00 !important;
+}
+.quick_links {
+	color: #fff;
+	float: right;
+	border-radius: 10px;
+	display: table;
+	box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+	background: #4a7fbb;
+	text-align: center;
+	font-size: 18px;
+	padding: 7px 30px;
+	transition: all linear 0.2s;
+	-webkit-animation: glowing 1000ms infinite;
+	-moz-animation: glowing 1000ms infinite;
+	-o-animation: glowing 1000ms infinite;
+	animation: glowing 1000ms infinite;
+	margin-right: 30px;
+}
+
+.circle_pull {
+	display: table;
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+
+.waterproofing_block {
+	width: 100%;
+	display: table;
+	/* background: url("https://polycoatusa.com/images/molecule.jpg") no-repeat; */
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.waterproofing_banner h1 {
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#0075bd+0,5ea8dc+100&0.8+0,0.8+100 */
+	background: -moz-linear-gradient(
+		left,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		rgba(0, 117, 189, 0.8) 0%,
+		rgba(94, 168, 220, 0.8) 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0075bd', endColorstr='#cc5ea8dc',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+	display: table;
+}
+
+.waterproofing_banner h1 span {
+	background-image: url(../images/Pedestrian_icon_white.png);
+	background-repeat: no-repeat;
+	background-size: 45px;
+	display: block;
+	padding: 15px 40px 20px 146px;
+	background-position: 44px 10px;
+}
+.waterproofing_gradient {
+	background: #0075bd; /* Old browsers */
+	background: -moz-linear-gradient(
+		left,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* FF3.6-15 */
+	background: -webkit-linear-gradient(
+		left,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(
+		to right,
+		#0075bd 0%,
+		#5ea8dc 100%
+	); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0075bd', endColorstr='#5ea8dc',GradientType=1 ); /* IE6-9 */
+	color: #fff;
+}
+
+.industrial_text {
+	width: 100%;
+	display: table;
+	background: rgba(255, 255, 255, 0.8);
+}
+
+.main_container {
+	width: 100%;
+	padding: 0 15px;
+	max-width: 1400px;
+	margin: 0px auto;
+}
+
+.title {
+	margin-top: 1.2em;
+	text-align: center;
+	margin-bottom: 1.1em;
+}
+
+.home_title {
+	color: #0d8acb !important;
+}
+
+.lg_title {
+	font-size: 28px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+.content {
+	color: #221f20;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.industries_bg {
+	position: relative;
+	display: table;
+	width: 100%;
+}
+
+.top_text {
+	color: #3b89c7;
+	position: absolute;
+	top: 6%;
+	width: 155px;
+	left: 5%;
+}
+
+.md_title,
+.link_btn,
+input.link_btn,
+.quick_links,
+.master_links {
+	font-size: 24px;
+	font-family: "Barlow", sans-serif;
+	font-weight: 900;
+}
+
+.bottom_text {
+	color: #fff;
+	position: absolute;
+	bottom: 6%;
+	width: 155px;
+	left: 5%;
+}
+
+.industries_bg {
+	position: relative;
+	display: table;
+	width: 100%;
+
+	/*		background: url(images/waterproofing_bg.png) no-repeat;*/
+	/*	background-size: cover;*/
+}
+.industries_bg_up {
+	background: rgba(255, 255, 255, 0.8);
+	display: table;
+	width: 100%;
+	padding-bottom: 28%;
+}
+.top_text {
+	color: #3b89c7;
+	position: absolute;
+	top: 6%;
+	width: 155px;
+	left: 5%;
+}
+.bottom_text {
+	color: #fff;
+	position: absolute;
+	bottom: 6%;
+	width: 155px;
+	left: 5%;
+}
+.industries_bg_down {
+	/* background: rgba(13, 138, 203, 0.8); */
+	display: table;
+	width: 100%;
+	padding-bottom: 28%;
+}
+.wheel_box {
+	width: 40%;
+	display: table;
+	top: 30.8%;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+
+.circle_image_box {
+	width: 100%;
+	position: relative;
+}
+
+.left-text-box {
+	width: 100%;
+	/* height: 100px; */
+	position: relative;
+	top: 100%;
+	background-color: rgba(0, 0, 0, 0.559);
+	border-radius: 50%;
+}
+
+.division_box,
+.content_box1 {
+	color: white;
+	background-size: 69%;
+	padding: 10% 30% 20%;
+	text-align: center;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 1;
+	top: 0px;
+	left: 3px;
+	border-radius: 50%;
+}
+
+.overlay-bg {
+	width: 300px;
+	height: 300px;
+	position: absolute;
+	background-color: #0d88cb8c;
+	border-radius: 50%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+}
+
+.circle_img {
+	background: url("https://polycoatusa.com/images/waterproofing_bg.jpg")
+		no-repeat;
+	background-size: 69%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 1;
+	top: -20px;
+	left: 3px;
+}
+
+.pedestrian_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/polyurea-waterproofing-1.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.spray_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.cast_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Military-Blast-Mitigation-1200.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 20%;
+	position: absolute;
+	opacity: 0;
+}
+.recreation_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Oil-Industry-Coatings-1200x641-1.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.theme_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/armorthane-polyurea-water-feature-coatings-6-6509ac4ea43a1.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 20%;
+	position: absolute;
+	opacity: 0;
+}
+.raw_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Construction-Application-ArmorThane-Polyurea-6.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 40%;
+	position: absolute;
+	opacity: 1;
+	top: -20px;
+	left: 3px;
+}
+
+.poly_fil_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/prop-making-main.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.foam_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/glo-water-reservoir-waterproofing-01-1-1.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.construction_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/seamless-rv-roof-coatning.jpg")
+		no-repeat;
+	background-size: 100%;
+	padding: 38% 0;
+	width: 94%;
+	background-position: 50% 3%;
+	position: absolute;
+	border-radius: 500px;
+	left: 3%;
+	opacity: 0;
+}
+.concrete_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Mine-Equipment-Coatings-Backup.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+
+.containment_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Roof-Coatings.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.defence_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Agriculture-Coatings-1200x624-1.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.infrastructure_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Manufacturing-Backup-1200.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 4%;
+	position: absolute;
+	opacity: 0;
+}
+.specialty_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Floor-Coatings-Main-1200.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 30% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.marine_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Marine-Industry-Coatings-1200x800-1.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+
+.oil_gas_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Spray-On-Bedliner-1200.jpg.jpg")
+		no-repeat;
+	background-size: 80%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 22%;
+	position: absolute;
+	opacity: 0;
+}
+
+.transport_img {
+	background: url("https://www.armorthane.com/wp-content/uploads/2024/01/Spray-Foam-1200.jpg")
+		no-repeat;
+	background-size: 73%;
+	padding: 28% 0;
+	width: 100%;
+	background-position: 50% 15%;
+	position: absolute;
+	opacity: 0;
+}
+.circle_text {
+	position: absolute;
+	margin-left: -27%;
+	width: 200px;
+	transform: rotate(6deg);
+	margin-top: -23%;
+	text-align: center;
+	transition: linear all 0.2s;
+}
+.circle_box {
+	width: 100%;
+	position: absolute;
+	display: table;
+	background: rgba(255, 0, 0, 0.3);
+	margin-top: 27%;
+	transform: rotate(-6.2deg);
+	top: 0;
+}
+.mobile-circle_box {
+	display: none !important;
+	width: 100%;
+	position: absolute;
+	display: table;
+	background: rgba(255, 0, 0, 0.3);
+	margin-top: 27%;
+	transform: rotate(-6.2deg);
+	top: 0;
+}
+.circle_blocks {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+.circle_blocks a {
+	left: -1%;
+}
+
+a {
+	color: #428bca;
+	text-decoration: none;
+}
+a:hover,
+a:focus {
+	color: #23527c;
+	text-decoration: underline;
+}
+.circle_blocks_img {
+	transform: rotate(-72.5deg);
+	width: 20%;
+	display: block;
+	margin-top: -24%;
+	margin-left: 3.4%;
+	transition: all linear 0.2s;
+}
+.circle_blocks_img:hover {
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+.circle_icon {
+	display: table;
+	width: 0%;
+	padding: 4.7% 4.1%;
+	position: relative;
+	z-index: 5;
+	margin-top: -16.2%;
+	margin-left: 9.3%;
+	transition: linear all 0.2s;
+}
+
+.pedestrian_icon {
+	rotate: -80deg;
+}
+.spray_icon {
+	rotate: -80deg;
+}
+.cast_icon {
+	rotate: -80deg;
+}
+.theme_icon {
+	margin-top: -18.2%;
+	rotate: -150deg;
+}
+.marine_icon {
+	rotate: -250deg;
+}
+.infrastructure_icon {
+	rotate: -250deg;
+}
+.spacialty_icon {
+	rotate: -250deg;
+}
+
+.pedestrian_link {
+	color: #3480c1;
+	margin-left: -20%;
+	transform: rotate(-54.5deg);
+	margin-top: -18%;
+}
+.industrial_link {
+	transform: rotate(-74deg);
+	margin-top: -20%;
+	color: #51b6ca;
+	margin-left: -20%;
+}
+.cast_link {
+	transform: rotate(-94deg);
+	margin-left: -20%;
+	margin-top: -20%;
+	color: #7fb953;
+}
+
+.recreation_link {
+	transform: rotate(-114deg);
+	margin-left: -20%;
+	color: #eea74b;
+}
+.theme_link {
+	transform: rotate(-135deg);
+	margin-left: -20%;
+	color: #df643b;
+}
+.raw_link {
+	transform: rotate(-154deg);
+	margin-left: -20%;
+	color: #df643b;
+}
+.polyfill_link {
+	transform: rotate(6deg);
+	margin-top: -17%;
+	margin-left: -25%;
+	color: #b6272d;
+}
+.spray_link {
+	transform: rotate(346.5deg);
+	margin-top: -19%;
+	margin-left: -24%;
+	color: #cd3e73;
+}
+.concrete_link {
+	transform: rotate(326deg);
+	margin-left: -20%;
+	margin-top: -16%;
+	color: #5e318c;
+}
+.transport_link {
+	color: #f8a33c;
+	transform: rotate(-174deg);
+	margin-left: -20%;
+	margin-top: -17%;
+}
+.oil_link {
+	color: #f8a33c;
+	transform: rotate(165deg);
+	margin-top: -17%;
+	margin-left: -20%;
+}
+.mining_link {
+	color: #b8556c;
+	transform: rotate(142deg);
+	margin-top: -20%;
+	margin-left: -20%;
+}
+.infrastructure_link {
+	color: #365441;
+	transform: rotate(119deg);
+	margin-left: -20%;
+	margin-top: -17%;
+}
+.spacialty_link {
+	color: #b6272d;
+	transform: rotate(97deg);
+	margin-top: -20%;
+	margin-left: -24%;
+}
+.defence_link {
+	color: #f04f26;
+	transform: rotate(74deg);
+	margin-left: -20%;
+}
+.containment_link {
+	color: #f47a22;
+	transform: rotate(51deg);
+	margin-left: -20%;
+}
+.construction_link {
+	color: #ff6d00;
+	transform: rotate(29deg);
+	margin-left: -20%;
+}
+
+.circle_pull {
+	display: table;
+	transform: rotate(-72.5deg) scale(1.15);
+	margin-top: -24%;
+	margin-left: 1.3%;
+}
+.pedestrian {
+	-ms-transform: rotate(60deg); /* IE 9 */
+	transform: rotate(60deg);
+}
+
+.elastomers {
+	-ms-transform: rotate(80deg); /* IE 9 */
+	transform: rotate(80deg);
+}
+.cast {
+	-ms-transform: rotate(100deg); /* IE 9 */
+	transform: rotate(100deg);
+}
+.recreation {
+	-ms-transform: rotate(120deg); /* IE 9 */
+	transform: rotate(120deg);
+}
+.theme {
+	-ms-transform: rotate(157.5deg); /* IE 9 */
+	transform: rotate(140deg);
+}
+.raw {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	transform: rotate(160deg);
+}
+.polyfil {
+	-ms-transform: rotate(0deg); /* IE 9 */
+	transform: rotate(0deg);
+}
+.foam {
+	-ms-transform: rotate(19deg); /* IE 9 */
+	transform: rotate(19deg);
+}
+.concrete {
+	-ms-transform: rotate(38deg); /* IE 9 */
+	transform: rotate(38deg);
+}
+.transport {
+	-ms-transform: rotate(180deg); /* IE 9 */
+	transform: rotate(180deg);
+}
+.oil_gas {
+	-ms-transform: rotate(202.5deg); /* IE 9 */
+	transform: rotate(202.5deg);
+}
+.marine {
+	-ms-transform: rotate(225deg); /* IE 9 */
+	transform: rotate(225deg);
+}
+.infrastructure {
+	-ms-transform: rotate(247.5deg); /* IE 9 */
+	transform: rotate(247.5deg);
+}
+.spacialty {
+	-ms-transform: rotate(270deg); /* IE 9 */
+	transform: rotate(270deg);
+}
+.defence {
+	-ms-transform: rotate(292.5deg); /* IE 9 */
+	transform: rotate(292.5deg);
+}
+.containment {
+	-ms-transform: rotate(315deg); /* IE 9 */
+	transform: rotate(315deg);
+}
+.construction {
+	-ms-transform: rotate(337.5deg); /* IE 9 */
+	transform: rotate(337.5deg);
+}
+.link_btn_container {
+	margin-top: 8px;
+	position: relative;
+	background-color: red;
+	display: inline-block;
+	z-index: 5;
+}
+
+.link_btn {
+	font-size: 7px !important;
+	padding: 2px 5px 3px 20px;
+	background-color: #0364a5 !important;
+	border: none;
+	color: white;
+}
+
+.btn_icon {
+	width: 12px;
+	height: 120%;
+	background-color: white;
+	position: absolute;
+	clip-path: polygon(49% 100%, 100% 61%, 100% 0, 0 0, 0 61%);
+	left: 4px;
+}
+
+
+/* text  */
+@media screen and (max-width: 1440px) {
+	.caption {
+		width: 65.5%;
+	}
+
+	.header_content {
+		width: 54%;
+	}
+	body,
+	p,
+	.link,
+	.page_list li a {
+		font-size: 14px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 14px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 13px;
+	}
+
+	.lg_title {
+		font-size: 25px;
+	}
+
+	.md_title {
+		font-size: 21px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.menu_bar li a,
+	.header_content a,
+	.header_content input,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.menu_bar {
+		margin-top: 76px;
+	}
+	.header_content {
+		width: 57%;
+	}
+	body,
+	p,
+	.link,
+	.header_content input,
+	.page_list li a {
+		font-size: 12px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 12px;
+	}
+
+	.lg_title {
+		font-size: 23px;
+	}
+	.md_title {
+		font-size: 20px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.menu_bar li a,
+	.header_content a,
+	.header_content input,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	body,
+	p,
+	.link {
+		font-size: 11px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 11px;
+	}
+
+	.lg_title {
+		font-size: 12px;
+	}
+
+	.md_title {
+		font-size: 14px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+    .overlay-bg {
+		width: 180px;
+		height: 180px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	body,
+	p,
+	.link {
+		font-size: 7px;
+		margin-bottom: 0px !important;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 11px;
+	}
+
+	.lg_title {
+		font-size: 12px;
+	}
+
+	.md_title {
+		font-size: 9px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 376px) {
+	body,
+	p,
+	.link {
+		font-size: 7px;
+	}
+	.manufacturing_link p,
+	.unprecedented_link p,
+	.storied_quality_link p,
+	.Product_innovations_link p {
+		font-size: 13px;
+	}
+	.circle_blocks a,
+	.waterproofing_circle a,
+	.cast_circle a,
+	.polyfill_circle a,
+	.circle_text {
+		font-size: 10px;
+	}
+
+	.lg_title {
+		font-size: 10px;
+	}
+
+	.md_title {
+		font-size: 8px;
+	}
+	.list_title,
+	.normal_title,
+	.sm_title,
+	.page_list li,
+	.link_btn,
+	input.link_btn,
+	.master_links,
+	.quick_links {
+		font-size: 12px;
+	}
+}
+
+/* box  */
+
+@media screen and (max-width: 1590px) {
+	.circle_text {
+		width: 150px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	.polyfil_box,
+	.transport_box {
+		top: 35.5%;
+	}
+	.foam_box,
+	.theme_box {
+		top: 32%;
+	}
+	.concrete_box {
+		top: 29%;
+	}
+	.pedestrian_box {
+		top: 31%;
+	}
+	.spray_box {
+		top: 36%;
+	}
+	.cast_box,
+	.marine_box,
+	.infrastructure_box {
+		top: 37%;
+	}
+	.specialty_box {
+		top: 34%;
+	}
+	.recreation_box {
+		top: 30%;
+	}
+
+	.oil_gas_box,
+	.defence_box,
+	.containment_box {
+		top: 36.5%;
+	}
+	.construction_box {
+		top: 37%;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.circle_text {
+		width: 136px;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.wheel_box {
+		width: 60%;
+		display: table;
+		top: 32.7%;
+		left: 50%;
+		position: absolute;
+	}
+
+	.overlay-bg {
+		width: 400px;
+		height: 400px;
+	}
+}
+@media screen and (max-width: 1080px) {
+	.industries_bg_up,
+	.industries_bg_down {
+		padding-bottom: 46.6%;
+	}
+	.circle_img {
+		background: url("https://polycoatusa.com/images/waterproofing_bg.jpg")
+			no-repeat;
+		background-size: 68%;
+		padding: 50% 0;
+		background-position: 50% -1%;
+	}
+	.pedestrian_img {
+		background: url(images/PPC_20160822_0002.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0;
+		background-position: 50% 1%;
+	}
+	.spray_img {
+		background: url(images/spray_bg.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.cast_img {
+		background: url(images/castStock.jpeg) no-repeat;
+		background-size: 79%;
+		padding: 50% 0%;
+		background-position: 50% 1%;
+	}
+	.recreation_img {
+		background: url(images/Recreation-img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.theme_img {
+		background: url(images/disney-theme.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.raw_img {
+		background: url(images/disney-theme.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.poly_fil_img {
+		background: url(images/poly_fil_img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.foam_img {
+		background: url(images/foam_img.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.construction_img {
+		background: url(images/DJI_0002.jpg) no-repeat;
+		background-size: 119%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+		border-radius: 500px;
+		width: 80%;
+		left: 8%;
+	}
+	.concrete_img {
+		background: url(images/concrete_img.jpg) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+
+	.containment_img {
+		background: url(images/gas-tanks-and-containers.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+	.defence_img {
+		background: url(images/defence_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.infrastructure_img {
+		background: url(images/landscape-5313115_1920.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 1%;
+	}
+	.specialty_img {
+		background: url(images/industries_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+	.marine_img {
+		background: url(images/marine_img.png) no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 17%;
+	}
+
+	.oil_gas_img {
+		background: url(images/refinery-109025_1920.jpg) no-repeat;
+		background-size: 80%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+
+	.transport_img {
+		background: url(https://www.armorthane.com/wp-content/uploads/2024/01/ArmorThane-CONTAINMENTafter-3.jpg)
+			no-repeat;
+		background-size: 73%;
+		padding: 50% 0%;
+		background-position: 50% 0%;
+	}
+
+	.overlay-bg {
+		width: 230px;
+		height: 220px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.circle_text {
+		left: -10% !important;
+		font-size: 10px !important;
+	}
+	.division_box {
+		padding: 4px;
+	}
+	.division_box,
+	.content_box1 {
+		padding: 10% 30% 20%;
+	}
+	.overlay-bg {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.mobile_link_btn{
+	display: block !important;
+	
+
+}
+	.circle_text {
+		left: -20% !important;
+		font-size: 8px !important;
+	}
+	.division_box,
+	.content_box1 {
+		padding: 15% 28% 10%;
+	}
+
+	.pedestrian_link {
+		left: -21% !important;
+	}
+	.cast_link {
+		left: -16% !important;
+	}
+
+	.overlay-bg {
+		width: 180px;
+		height: 180px;
+	}
+
+	.circle_box {
+		display: none !important;
+	}
+
+	.mobile-circle_box {
+		display: table !important;
+	}
+}
+@media screen and (max-width: 376px) {
+	.circle_text {
+		left: -29% !important;
+		font-size: 7px !important;
+	}
+
+	.pedestrian_link {
+		left: -23% !important;
+	}
+
+	.cast_link {
+		left: -23% !important;
+	}
+
+	.division_box {
+		padding: 4px;
+	}
+
+	.division_box,
+	.content_box1 {
+		padding: 10% 28% 10%;
+	}
+	.overlay-bg {
+		width: 130px;
+		height: 120px;
+	}
+}
+@media screen and (max-width: 300px) {
+	.circle_text {
+		left: -35% !important;
+		font-size: 6px !important;
+	}
+
+	.pedestrian_link {
+		left: -35% !important;
+	}
+
+	.cast_link {
+		left: -30% !important;
+	}
+
+	.division_box {
+		padding: 4px;
+	}
+
+	.division_box,
+	.content_box1 {
+		padding: 13% 28% 10%;
+	}
+	.overlay-bg {
+		width: 100px;
+		height: 100px;
+	}
+
+	body,
+	p,
+	.link {
+		font-size: 5px;
+	}
+	.md_title {
+		font-size: 6px;
+	}
+}
+		</style>
+		
 	</head>
 	<body>
 		<div class="waterproofing_block">
@@ -137,7 +1508,7 @@
 							></div>
 						</div>
 
-						<!-- text box -->
+						<!--for mobile text box -->
 						<div class="left-text-box">
 							<div class="overlay-bg">
 
@@ -150,8 +1521,16 @@
 									<h2 class="md_title">
 										Waterproof Coatings 									</h2>
 									<p>
-										Long-lasting protection and durability for a wide range of surfaces, including roofs, decks, basements, and more. 
-									</p>
+                                        Long-lasting protection and durability for roofs, decks, basements, and more. 									</p>
+
+									<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/weatherproofing/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -165,8 +1544,17 @@
 										Containment Coatings
 									</h2>
 									<p>
-										Durable and reliable protection for surfaces, preventing leaks, spills, and contamination in various industrial, commercial, and residential applications. 
-									</p>
+                                        Prevent leaks, spills, and contamination in various industrial, commercial, and residential applications. 									</p>
+
+									<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+secondary-spill-containment/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -180,8 +1568,16 @@
 										Military / Blast Mitigation Coatings
 									</h2>
 									<p>
-										Advanced protection against the impact of explosions and ballistic threats, providing a robust and resilient shield for military vehicles, structures, and other critical assets. 
-									</p>
+                                        Protection against the impact of explosions and ballistic threats, providing a robust and resilient shield for critical assets. 									</p>
+
+											<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+blast-mitigation-protection/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -195,8 +1591,18 @@
 										Oil Industry Coatings
 									</h2>
 									<p>
-										Exceptional corrosion resistance, chemical resistance, and impact resistance to ensure long-lasting protection for pipelines, tanks, and other equipment. 
-									</p>
+                                        Exceptional corrosion resistance, chemical resistance, and impact resistance to ensure long-lasting protection. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+secondary-spill-containment/
+oil-containment/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -208,8 +1614,16 @@
 								<span>
 									<h2 class="md_title">Landscaping Coatings</h2>
 									<p>
-										Resistance against weathering, UV rays, staining, and erosion, ensuring beautiful aesthetics, durability, and longevity in various landscaping projects. 
-									</p>
+                                        Resistance against weathering, UV rays, staining, and erosion for various landscaping projects. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/water-featuresand-decks/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -221,8 +1635,16 @@
 								<span>
 									<h2 class="md_title">Concrete Coatings</h2>
 									<p>
-										Enhance and protect concrete surfaces, providing excellent resistance against chemicals, abrasion, impact, and UV exposure 
-									</p>
+                                        Cxcellent resistance against chemicals, abrasion, impact, and UV exposure 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/concrete-coatings/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -237,6 +1659,14 @@
 									</h2>
 									<p>
 										Stunning aesthetics and long-lasting durability in various themed environments. 									</p>
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+armorthane-dealer-info/
+coatings-dealer-opportunities/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -250,8 +1680,15 @@
 										Tank Coatings 
 									</h2>
 									<p>
-										Resistance against corrosion, chemicals, abrasions, and leaks, ensuring long-term durability and integrity for a wide range of industrial, commercial, and municipal tank applications. 
-									</p>
+                                        Resistance against corrosion, chemicals, abrasions, and leaks for tank applications. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+why-polyurea-is-the-ultimatetank-lining-solution/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -263,8 +1700,17 @@
 								<span>
 									<h2 class="md_title">Mine Coatings </h2>
 									<p>
-										Extended lifespan, reduced maintenance, and optimal performance in demanding mining operations. 
-									</p>
+                                        Extended lifespan, reduced maintenance, and optimal performance in demanding mining operations. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+mining-equipment-coatings/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -276,8 +1722,16 @@
 								<span>
 									<h2 class="md_title">RV Roof Coatings </h2>
 									<p>
-										Exceptional resistance against leaks, cracks, UV rays, and weathering, ensuring long-lasting performance and enhanced lifespan for RVs. 
-									</p>
+                                        Exceptional resistance against leaks, cracks, UV rays, and weathering for RVs. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/roofing/rv-roofrepair/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -290,8 +1744,16 @@
 									<h2 class="md_title">
 										Roof Coatings
 									<p>
-										Superior resistance against abrasions, impacts, weathering, and UV rays, ensuring safety, longevity, and vibrant aesthetics for a wide range of recreational environments. 
-									</p>
+                                        Resistance against abrasions, impacts, weathering, and UV rays for recreational environments. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/roofing/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -303,8 +1765,16 @@
 								<span>
 									<h2 class="md_title">Agriculture Coatings </h2>
 									<p>
-										Superior resistance against corrosion, chemicals, weathering, and UV rays, ensuring increased durability, improved performance, and prolonged lifespan in demanding agricultural environments. 
-									</p>
+                                        Increased durability, improved performance, and prolonged lifespan in demanding agricultural environments. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+ag-equipment-coatings/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -318,8 +1788,16 @@
 										Floor Coatings
 									</h2>
 									<p>
-										Resistance against stains, chemicals, abrasions, and heavy traffic, resulting in enhanced safety, longevity, and aesthetics for residential, commercial, and industrial floors. 
-									</p>
+                                        Enhanced safety, longevity, and aesthetics for residential, commercial, and industrial floors. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/concrete-andwood-flooring/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -331,8 +1809,16 @@
 								<span>
 									<h2 class="md_title">Manufacturing Coatings</h2>
 									<p>
-										Protect manufacturing equipment and surfaces, providing exceptional resistance against wear, chemicals, abrasion, and impact, ensuring optimal performance, longevity, and efficiency in manufacturing operations. 
-									</p>
+                                        Exceptional resistance against wear, chemicals, abrasion, and impact for manufacturing operations. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+oem-polyurethane-applications/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -346,8 +1832,17 @@
 										Marine Coatings
 									</h2>
 									<p>
-										Excellent resistance against saltwater, corrosion, UV rays, and impact, ensuring long-lasting protection and enhancing the performance and appearance of boats, yachts, and other marine vessels. 
-									</p>
+                                        Resistance against saltwater, corrosion, UV rays, and impact forfmarine vessels. 									</p>
+
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+truck-bedliner-applications/
+boats/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 
@@ -359,8 +1854,15 @@
 								<span>
 									<h2 class="md_title">AUTOMOTIVE</h2>
 									<p>
-										Superior resistance against abrasions, chemicals, UV rays, and weathering, resulting in a long-lasting, high-gloss finish that preserves the aesthetics and value of automotive surfaces.
-									</p>
+                                        Superior resistance against abrasions, chemicals, UV rays, and weathering for automotive surfaces. 									</p>
+										<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+truck-bedliner-applications/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 							<!-- Transportation -->
@@ -371,18 +1873,31 @@
 							>
 								<span>
 									<h2 class="md_title">Spray Foam Roofing & Insulation</h2>
-									<p>Energy efficiency, reduced utility costs, and durable protection against leaks and environmental elements for both commercial and residential roofing applications. 
+									<p>Energy efficiency, reduced utility costs, and durable protection against leaks and environmental elements. 
 									</p>
+
+									<div class="mobile_link_btn">
+									
+<div onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/spray-foaminsulation/`;" class="mobile_link_btn_content btn_text">
+	VIEW MORE
+</div>
+									</div>
 								</span>
 							</div>
 						</div>
 
+
+						<!-- pc content  start-->
 						<div class="circle_box">
 							<!-- top  -->
 							<!-- pedestrian -->
 							<div
 								class="circle_blocks pedestrian"
-								onclick="location.href='waterproofing.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/weatherproofing/`;"
 							>
 								<a
 									href="waterproofing.php"
@@ -406,7 +1921,10 @@
 							<!-- elastomers -->
 							<div
 								class="circle_blocks elastomers"
-								onclick="location.href='industrial-coatings.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+secondary-spill-containment/`;"
 							>
 								<a
 									href="industrial-coatings.php"
@@ -430,7 +1948,9 @@
 							<!-- cast -->
 							<div
 								class="circle_blocks cast"
-								onclick="location.href='cast-elastomers.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+blast-mitigation-protection/`;"
 							>
 								<a
 									href="cast-elastomers.php"
@@ -454,7 +1974,11 @@
 							<!-- recreation_link -->
 							<div
 								class="circle_blocks recreation"
-								onclick="location.href='recreation-decorative.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+secondary-spill-containment/
+oil-containment/`;"
 							>
 								<a
 									href="recreation-decorative.php"
@@ -470,7 +1994,7 @@
 								<div
 									class="circle_icon recreation_icon"
 									style="
-										background: url('https://polycoatusa.com/images/round/Recreation_icon.png')
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/oil-rig-1.png')
 											0% 0% / 100% no-repeat;
 										transform: rotate(-154deg);
 										width: 0%;
@@ -481,7 +2005,9 @@
 							<!-- theme_link -->
 							<div
 								class="circle_blocks theme"
-								onclick="location.href='theming.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/water-featuresand-decks/`;"
 							>
 								<a
 									href="theming.php"
@@ -505,7 +2031,9 @@
 							<!-- raw_link -->
 							<div
 								class="circle_blocks raw"
-								onclick="location.href='raw-material.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/concrete-coatings/`;"
 							>
 								<a
 									href="raw-material.php"
@@ -531,7 +2059,9 @@
 							<!-- polyfill_link -->
 							<div
 								class="circle_blocks polyfil"
-								onclick="location.href='polyfil.php';"
+								onclick="location.href=`https://www.armorthane.com/
+armorthane-dealer-info/
+coatings-dealer-opportunities/`;"
 							>
 								<a
 									href="polyfil.php"
@@ -556,7 +2086,8 @@
 							<!-- spray_link -->
 							<div
 								class="circle_blocks foam"
-								onclick="location.href='spray_foam.php';"
+								onclick="location.href=`https://www.armorthane.com/
+why-polyurea-is-the-ultimatetank-lining-solution/`;"
 							>
 								<a
 									href="spray_foam.php"
@@ -572,7 +2103,7 @@
 								<div
 									class="circle_icon foam_icon"
 									style="
-										background: url('https://polycoatusa.com/images/round/Foam_icon.png')
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/TANK-COATINGS-WHITE.png')
 											0% 0% / 100% no-repeat;
 										width: 0%;
 									"
@@ -582,7 +2113,10 @@
 							<!-- concrete_link -->
 							<div
 								class="circle_blocks concrete"
-								onclick="location.href='concrete_repair.php';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+industrial-protective-coatings/
+mining-equipment-coatings/`;"
 							>
 								<a
 									href="concrete_repair.php"
@@ -611,7 +2145,9 @@
 							<!-- transport_link -->
 							<div
 								class="circle_blocks transport"
-								onclick="location.href='market_page.php?productName=Transportation';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/spray-foaminsulation/`;"
 							>
 								<a
 									href="market_page.php?productName=Transportation"
@@ -638,7 +2174,9 @@
 							<!-- oil_link -->
 							<div
 								class="circle_blocks oil_gas"
-								onclick="location.href='market_page.php?productName=Oil and Gas';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+truck-bedliner-applications/`;"
 							>
 								<a
 									href="market_page.php?productName=Oil and Gas"
@@ -653,7 +2191,7 @@
 								<div
 									class="circle_icon oil_gas_icon"
 									style="
-										background: url('https://polycoatusa.com/images/round/oil_gas_icon.png')
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/bedliner-icon.png')
 											0% 0% / 100% no-repeat;
 										width: 0%;
 									"
@@ -662,7 +2200,10 @@
 							<!-- mining_link -->
 							<div
 								class="circle_blocks marine"
-								onclick="location.href='market_page.php?productName=Mining and Marine';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+truck-bedliner-applications/
+boats/`;"
 							>
 								<a
 									href="market_page.php?productName=Mining and Marine"
@@ -687,7 +2228,9 @@
 							<!-- infrastructure_link -->
 							<div
 								class="circle_blocks infrastructure"
-								onclick="location.href='market_page.php?productName=Infrastructure';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+oem-polyurethane-applications/`;"
 							>
 								<a
 									href="market_page.php?productName=Infrastructure"
@@ -713,7 +2256,9 @@
 							<!-- spacialty_link -->
 							<div
 								class="circle_blocks spacialty"
-								onclick="location.href='market_page.php?productName=Industrial and Specialty';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/concrete-andwood-flooring/`;"
 							>
 								<a
 									href="market_page.php?productName=Industrial and Specialty"
@@ -738,7 +2283,9 @@
 							<!-- defence_link -->
 							<div
 								class="circle_blocks defence"
-								onclick="location.href='market_page.php?productName=Defense';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+ag-equipment-coatings/`;"
 							>
 								<a
 									href="market_page.php?productName=Defense"
@@ -753,7 +2300,7 @@
 								<div
 									class="circle_icon defence_icon"
 									style="
-										background: url('https://polycoatusa.com/images/round/defence_icon.png')
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/AGRICULTURE.png')
 											0% 0% / 100% no-repeat;
 										width: 0%;
 									"
@@ -763,7 +2310,9 @@
 							<!-- containment_link -->
 							<div
 								class="circle_blocks containment"
-								onclick="location.href='market_page.php?productName=Containment and Liners';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/roofing/`;"
 							>
 								<a
 									href="market_page.php?productName=Containment and Liners"
@@ -789,7 +2338,449 @@
 							<!-- construction_link -->
 							<div
 								class="circle_blocks construction"
-								onclick="location.href='market_page.php?productName=Construction';"
+								onclick="location.href=`https://www.armorthane.com/
+protective-coating-applications/
+construction-coatingsapplications/roofing/rv-roofrepair/`;"
+							>
+								<a
+									href="market_page.php?productName=Construction"
+									class="circle_text construction_link"
+									style="margin-left: -20%"
+									>RV Roof <br/>
+									Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/specialty_bg.png"
+									class="circle_blocks_img construction_bg"
+								/>
+								<div
+									class="circle_icon construction_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/RV-Roof-Coating.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+						</div>
+						<!-- pc content  end-->
+
+
+						
+
+						<!-- mobile content  start-->
+						<div class="mobile-circle_box">
+							<!-- top  -->
+							<!-- pedestrian -->
+							<div
+								class="circle_blocks pedestrian"
+								
+							>
+								<a
+									href="waterproofing.php"
+									class="circle_text pedestrian_link"
+									style="margin-left: -18%"
+									>Waterproof Coatings 
+								</a>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/transport_bg.png"
+									class="circle_blocks_img pedestrian_bg circle_pull"
+								/>
+								<div
+									class="circle_icon pedestrian_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-14.png')
+											0% 0% / 100% no-repeat;
+										width: 9%;
+									"
+								></div>
+							</div>
+							<!-- elastomers -->
+							<div
+								class="circle_blocks elastomers"
+								
+							>
+								<a
+									href="industrial-coatings.php"
+									class="circle_text industrial_link"
+									style="margin-left: -22%"
+									>Containment Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/containment_bg.png"
+									class="circle_blocks_img spray_bg"
+								/>
+								<div
+									class="circle_icon spray_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Secondary-Containment-1.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- cast -->
+							<div
+								class="circle_blocks cast"
+								
+							>
+								<a
+									href="cast-elastomers.php"
+									class="circle_text cast_link"
+									style="margin-left: -18%"
+									>Military / Blast <br />Mitigation Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/defence_bg.png"
+									class="circle_blocks_img cast_bg"
+								/>
+								<div
+									class="circle_icon cast_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-17.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- recreation_link -->
+							<div
+								class="circle_blocks recreation"
+								php';"
+							>
+								<a
+									href="recreation-decorative.php"
+									class="circle_text recreation_link"
+									style="margin-left: -20%"
+									>Oil Industry Coatings 
+									</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/oil_gas_bg.png"
+									class="circle_blocks_img recreation_bg"
+								/>
+								<div
+									class="circle_icon recreation_icon"
+									style="
+										background: url('https://polycoatusa.com/images/round/Recreation_icon.png')
+											0% 0% / 100% no-repeat;
+										transform: rotate(-154deg);
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- theme_link -->
+							<div
+								class="circle_blocks theme"
+								php';"
+							>
+								<a
+									href="theming.php"
+									class="circle_text theme_link"
+									style="margin-left: -22%"
+									>Landscaping <br> Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/cast_bg.png"
+									class="circle_blocks_img theme_bg"
+								/>
+								<div
+									class="circle_icon theme_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-19.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- raw_link -->
+							<div
+								class="circle_blocks raw"
+								
+							>
+								<a
+									href="raw-material.php"
+									class="circle_text raw_link"
+									style="margin-left: -22%"
+									>Concrete Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/concrete_bg.png"
+									class="circle_blocks_img raw_bg"
+								/>
+								<div
+									class="circle_icon raw_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-7.png')
+											30% center / 80% no-repeat;
+										transform: rotate(180deg);
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- polyfill_link -->
+							<div
+								class="circle_blocks polyfil"
+							>
+								<a
+									href="polyfil.php"
+									class="circle_text polyfill_link notw"
+									style="margin-left: -22%"
+									>Theme & Prop <br />Coatings
+									</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/spray_bg.png"
+									class="circle_blocks_img polyfil_bg"
+								/>
+								<div
+									class="circle_icon polyfil_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-20.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- spray_link -->
+							<div
+								class="circle_blocks foam"
+								
+							>
+								<a
+									href="spray_foam.php"
+									class="circle_text spray_link"
+									style="margin-left: -24%"
+									>Tank Coatings 
+									</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/spray_foam_bg.png"
+									class="circle_blocks_img foam_bg"
+								/>
+								<div
+									class="circle_icon foam_icon"
+									style="
+										background: url('https://polycoatusa.com/images/round/Foam_icon.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- concrete_link -->
+							<div
+								class="circle_blocks concrete"
+								
+							>
+								<a
+									href="concrete_repair.php"
+									class="circle_text concrete_link"
+									style="margin-left: -20%"
+									>Mine Coatings </a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/theme_bg.png"
+									class="circle_blocks_img concrete_bg"
+								/>
+								<div
+									class="circle_icon concrete_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-16.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- top end  -->
+
+							<!-- bottom start  -->
+
+							<!-- transport_link -->
+							<div
+								class="circle_blocks transport"
+								
+							>
+								<a
+									href="market_page.php?productName=Transportation"
+									class="circle_text transport_link"
+									style="left: -4%; margin-left: -20%"
+								>
+								Spray Foam <br> Roofing <br/>
+								& Insulation</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/construction_bg.png"
+									class="circle_blocks_img transport_bg"
+								/>
+								<div
+									class="circle_icon transport_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-2.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- oil_link -->
+							<div
+								class="circle_blocks oil_gas"
+								
+							>
+								<a
+									href="market_page.php?productName=Oil and Gas"
+									class="circle_text oil_link"
+									style="margin-left: -20%"
+									>AUTOMOTIVE</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/infrastructure_bg.png"
+									class="circle_blocks_img oil_gas_bg"
+								/>
+								<div
+									class="circle_icon oil_gas_icon"
+									style="
+										background: url('https://polycoatusa.com/images/round/oil_gas_icon.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- mining_link -->
+							<div
+								class="circle_blocks marine"
+								
+							>
+								<a
+									href="market_page.php?productName=Mining and Marine"
+									class="circle_text mining_link"
+									style="margin-left: -20%"
+									>Marine Coatings
+									</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/marine_bg.png"
+									class="circle_blocks_img marine_bg"
+								/>
+								<div
+									class="circle_icon marine_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-22.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+							<!-- infrastructure_link -->
+							<div
+								class="circle_blocks infrastructure"
+								
+							>
+								<a
+									href="market_page.php?productName=Infrastructure"
+									class="circle_text infrastructure_link"
+									style="margin-left: -20%"
+									>Manufacturing <br/>
+									Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/pedestrian_bg.png"
+									class="circle_blocks_img infrastructure_bg"
+								/>
+								<div
+									class="circle_icon infrastructure_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-6.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- spacialty_link -->
+							<div
+								class="circle_blocks spacialty"
+								
+							>
+								<a
+									href="market_page.php?productName=Industrial and Specialty"
+									class="circle_text spacialty_link"
+									style="margin-left: -20%"
+									>Floor Coatings</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/polyfil_bg.png"
+									class="circle_blocks_img spacialty_bg"
+								/>
+								<div
+									class="circle_icon spacialty_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Asset-18.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- defence_link -->
+							<div
+								class="circle_blocks defence"
+								
+							>
+								<a
+									href="market_page.php?productName=Defense"
+									class="circle_text defence_link"
+									style="margin-left: -20%"
+									>Agriculture Coatings </a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/raw_bg.png"
+									class="circle_blocks_img defence_bg"
+								/>
+								<div
+									class="circle_icon defence_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Tractor-512x512-2.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- containment_link -->
+							<div
+								class="circle_blocks containment"
+								
+							>
+								<a
+									href="market_page.php?productName=Containment and Liners"
+									class="circle_text containment_link"
+									style="left: -3%; margin-left: -20%"
+									>Roof Coatings
+									</a
+								>
+								<img
+									src="https://www.armorthane.com/wp-content/uploads/2024/01/recreation_bg.png"
+									class="circle_blocks_img containment_bg"
+								/>
+								<div
+									class="circle_icon containment_icon"
+									style="
+										background: url('https://www.armorthane.com/wp-content/uploads/2024/01/Polyurea-Roofing.png')
+											0% 0% / 100% no-repeat;
+										width: 0%;
+									"
+								></div>
+							</div>
+
+							<!-- construction_link -->
+							<div
+								class="circle_blocks construction"
+								
 							>
 								<a
 									href="market_page.php?productName=Construction"
@@ -812,12 +2803,272 @@
 								></div>
 							</div>
 						</div>
+						<!-- mobile content  end-->
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<script src="./script.js"></script>
+		<script>
+		document.addEventListener('DOMContentLoaded', function () {
+    const icons = document.querySelectorAll('.pedestrian_icon, .spray_icon, .cast_icon, .recreation_icon, .theme_icon, .raw_icon, .polyfil_icon, .foam_icon, .concrete_icon, .construction_icon, .containment_icon, .defence_icon, .spacialty_icon, .marine_icon, .oil_gas_icon, .transport_icon, .infrastructure_icon');
+
+    const backgrounds = document.querySelectorAll('.pedestrian_bg, .spray_bg, .cast_bg, .recreation_bg, .theme_bg, .raw_bg, .polyfil_bg, .foam_bg, .concrete_bg, .construction_bg, .containment_bg, .defence_bg, .spacialty_bg, .infrastructure_bg, .marine_bg, .oil_gas_bg, .transport_bg');
+
+    const boxes = document.querySelectorAll('.pedestrian_box, .spray_box, .cast_box, .recreation_box, .theme_box, .raw_box, .polyfil_box, .foam_box, .concrete_box, .construction_box, .containment_box, .defence_box, .specialty_box, .infrastructure_box, .marine_box, .oil_gas_box, .transport_box');
+
+    const images = document.querySelectorAll('.pedestrian_img, .circle_img, .spray_img, .cast_img, .recreation_img, .theme_img, .raw_img, .poly_fil_img, .foam_img, .concrete_img, .construction_img, .defence_img, .specialty_img, .infrastructure_img, .marine_img, .oil_gas_img, .transport_img, .containment_img');
+
+    const links = document.querySelectorAll('.pedestrian_link, .industrial_link, .cast_link, .recreation_link, .theme_link, .raw_link, .polyfill_link, .spray_link, .concrete_link, .construction_link, .defence_link, .spacialty_link, .infrastructure_link, .mining_link, .transport_link, .containment_link, .oil_link');
+
+    const resetAllStyleFun = () => {
+        icons.forEach(function (icon) {
+            icon.style.width = '0%';
+        });
+
+        backgrounds.forEach(function (bg) {
+            bg.classList.remove('circle_pull');
+        });
+
+        boxes.forEach(function (box) {
+            box.style.display = 'none';
+        });
+
+
+        images.forEach(function (img) {
+            img.style.opacity = '0';
+        });
+
+
+        links.forEach(function (link) {
+            link.style.marginLeft = '-22%';
+        });
+    }
+
+
+
+    const pedestrianIcons = document.querySelectorAll('.pedestrian_icon, .pedestrian_bg');
+
+    pedestrianIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.pedestrian_icon').style.width = '9%';
+            document.querySelector('.pedestrian_bg').classList.add('circle_pull');
+            document.querySelector('.pedestrian_box').style.display = 'block';
+            document.querySelector('.pedestrian_img').style.opacity = '1';
+            document.querySelector('.pedestrian_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+    const sprayIcon = document.querySelectorAll('.spray_icon, .spray_bg');
+    sprayIcon.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+            resetAllStyleFun()
+            document.querySelector('.spray_icon').style.width = '9%';
+            document.querySelector('.spray_bg').classList.add('circle_pull');
+            document.querySelector('.spray_box').style.display = 'block';
+            document.querySelector('.spray_img').style.opacity = '1';
+            document.querySelector('.industrial_link').style.marginLeft = '-24%';
+        });
+    });
+
+    const cast_iconIcons = document.querySelectorAll('.cast_icon, .cast_bg');
+    cast_iconIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.cast_icon').style.width = '9%';
+            document.querySelector('.cast_bg').classList.add('circle_pull');
+            document.querySelector('.cast_box').style.display = 'block';
+            document.querySelector('.cast_img').style.opacity = '1';
+            document.querySelector('.cast_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+    const recreationIcons = document.querySelectorAll('.recreation_icon, .recreation_bg');
+    recreationIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.recreation_icon').style.width = '9%';
+            document.querySelector('.recreation_bg').classList.add('circle_pull');
+            document.querySelector('.recreation_box').style.display = 'block';
+            document.querySelector('.recreation_img').style.opacity = '1';
+            document.querySelector('.recreation_link').style.marginLeft = '-24%';
+        });
+    });
+    const themeIcons = document.querySelectorAll('.theme_icon, .theme_bg');
+    themeIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.theme_icon').style.width = '9%';
+            document.querySelector('.theme_bg').classList.add('circle_pull');
+            document.querySelector('.theme_box').style.display = 'block';
+            document.querySelector('.theme_img').style.opacity = '1';
+            document.querySelector('.theme_link').style.marginLeft = '-24%';
+        });
+    });
+    const rawIcons = document.querySelectorAll('.raw_icon, .raw_bg');
+    rawIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.raw_icon').style.width = '9%';
+            document.querySelector('.raw_bg').classList.add('circle_pull');
+            document.querySelector('.raw_box').style.display = 'block';
+            document.querySelector('.raw_img').style.opacity = '1';
+            document.querySelector('.raw_link').style.marginLeft = '-24%';
+        });
+    });
+    const polyfilIcons = document.querySelectorAll('.polyfil_icon, .polyfil_bg');
+    polyfilIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+            resetAllStyleFun()
+            document.querySelector('.polyfil_icon').style.width = '9%';
+            document.querySelector('.polyfil_bg').classList.add('circle_pull');
+            document.querySelector('.polyfil_box').style.display = 'block';
+            document.querySelector('.poly_fil_img').style.opacity = '1';
+            document.querySelector('.notw').style.marginLeft = '-24%';
+        });
+    });
+    const foamIcons = document.querySelectorAll('.foam_icon, .foam_bg');
+    foamIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.foam_icon').style.width = '9%';
+            document.querySelector('.foam_bg').classList.add('circle_pull');
+            document.querySelector('.foam_box').style.display = 'block';
+            document.querySelector('.foam_img').style.opacity = '1';
+            document.querySelector('.spray_link').style.marginLeft = '-24%';
+        });
+    });
+
+    const concreteIcons = document.querySelectorAll('.concrete_icon, .concrete_bg');
+    concreteIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.concrete_icon').style.width = '9%';
+            document.querySelector('.concrete_bg').classList.add('circle_pull');
+            document.querySelector('.concrete_box').style.display = 'block';
+            document.querySelector('.concrete_img').style.opacity = '1';
+            document.querySelector('.concrete_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+    const marineIcons = document.querySelectorAll('.marine_icon, .marine_bg');
+    marineIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.marine_icon').style.width = '9%';
+            document.querySelector('.marine_bg').classList.add('circle_pull');
+            document.querySelector('.marine_box').style.display = 'block';
+            document.querySelector('.marine_img').style.opacity = '1';
+            document.querySelector('.mining_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+    // todo 
+    const transportIcons = document.querySelectorAll('.transport_icon, .transport_bg');
+    transportIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.transport_icon').style.width = '9%';
+            document.querySelector('.transport_bg').classList.add('circle_pull');
+            document.querySelector('.transport_box').style.display = 'block';
+            document.querySelector('.transport_img').style.opacity = '1';
+            document.querySelector('.transport_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+    const oil_gasIcons = document.querySelectorAll('.oil_gas_icon, .oil_gas_bg');
+    oil_gasIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.oil_gas_icon').style.width = '9%';
+            document.querySelector('.oil_gas_bg').classList.add('circle_pull');
+            document.querySelector('.oil_gas_box').style.display = 'block';
+            document.querySelector('.oil_gas_img').style.opacity = '1';
+            document.querySelector('.oil_link').style.marginLeft = '-24%';
+        });
+    });
+    // 
+    const infrastructureIcons = document.querySelectorAll('.infrastructure_icon, .infrastructure_bg');
+    infrastructureIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.infrastructure_icon').style.width = '9%';
+            document.querySelector('.infrastructure_bg').classList.add('circle_pull');
+            document.querySelector('.infrastructure_box').style.display = 'block';
+            document.querySelector('.infrastructure_img').style.opacity = '1';
+            document.querySelector('.infrastructure_link').style.marginLeft = '-24%';
+        });
+    });
+    const spacialtyIcons = document.querySelectorAll('.spacialty_icon, .spacialty_bg');
+    spacialtyIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            console.log('first', document.querySelector('.spacialty_link'))
+            resetAllStyleFun()
+            document.querySelector('.spacialty_icon').style.width = '9%';
+            document.querySelector('.spacialty_bg').classList.add('circle_pull');
+            document.querySelector('.specialty_box').style.display = 'block';
+            document.querySelector('.specialty_img').style.opacity = '1';
+            document.querySelector('.spacialty_link').style.marginLeft = '-28%';
+        });
+    });
+    const defenceIcons = document.querySelectorAll('.defence_icon, .defence_bg');
+    defenceIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.defence_icon').style.width = '9%';
+            document.querySelector('.defence_bg').classList.add('circle_pull');
+            document.querySelector('.defence_box').style.display = 'block';
+            document.querySelector('.defence_img').style.opacity = '1';
+            document.querySelector('.defence_link').style.marginLeft = '-24%';
+        });
+    });
+    const containmentIcons = document.querySelectorAll('.containment_icon, .containment_bg');
+    containmentIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.containment_icon').style.width = '9%';
+            document.querySelector('.containment_bg').classList.add('circle_pull');
+            document.querySelector('.containment_box').style.display = 'block';
+            document.querySelector('.containment_img').style.opacity = '1';
+            document.querySelector('.containment_link').style.marginLeft = '-24%';
+        });
+    });
+    const constructionIcons = document.querySelectorAll('.construction_icon, .construction_bg');
+    constructionIcons.forEach(function (element) {
+        element.addEventListener('mouseover', function () {
+
+            resetAllStyleFun()
+            document.querySelector('.construction_icon').style.width = '9%';
+            document.querySelector('.construction_bg').classList.add('circle_pull');
+            document.querySelector('.construction_box').style.display = 'block';
+            document.querySelector('.construction_img').style.opacity = '1';
+            document.querySelector('.construction_link').style.marginLeft = '-24%';
+        });
+    });
+
+
+});
+		</script>
 	</body>
 </html>
