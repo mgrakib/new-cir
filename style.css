@@ -78,6 +78,7 @@ input.link_btn,
 }
 
 .mobile_link_btn{
+	display: none;
 	width: 55px;
 	z-index: 999999 !important;
 	height: '8px';
@@ -1273,6 +1274,11 @@ a:focus {
 }
 
 @media screen and (max-width: 576px) {
+	.mobile_link_btn{
+	display: block;
+	
+
+}
 	.circle_text {
 		left: -20% !important;
 		font-size: 8px !important;
