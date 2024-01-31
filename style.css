@@ -19,8 +19,9 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	/* justify-content: center; */
 	padding: 40px 0;
+	overflow-x: hidden;
 }
 
 /* title container  */
@@ -49,8 +50,8 @@
 
 .circle-container {
 	width: 100%;
-	height: 100%;
-	padding: 40px 0;
+	
+	padding: 100px 0;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -135,16 +136,28 @@
 	border: 2px solid #a9cae0;
 	height: 150%;
 	border-radius: 50%;
+	z-index: 10;
 }
 
 .orbit-container {
-	width: 100%;
+	/* width: 100%; */
 	height: 100%;
 	position: absolute;
 	left: 0;
 	top: 0;
+
+	left: 50%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 1px 1px;
 }
 
+.earth-orbit {
+	position: relative;
+	height: 100%; /* Adjust the size of the orbit as needed */
+}
 .dot {
 	width: 12px; /* Adjust the size of the dot as needed */
 	height: 12px; /* Adjust the size of the dot as needed */
@@ -156,9 +169,9 @@
 	transform: translateX(-50%);
 }
 .big-dot {
-	width: 50px; /* Adjust the size of the dot as needed */
-	height: 50px; /* Adjust the size of the dot as needed */
-	background-color: #a9cae0;
+	width: 50px;
+	height: 50px;
+	z-index: 9999; /* Set a high z-index */
 	border-radius: 50%;
 	position: absolute;
 	bottom: -25px;
@@ -168,21 +181,47 @@
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+	cursor: pointer;
+}
+
+.big-dot-image {
+	width: 100%;
+	object-fit: cover;
+}
+
+/* big dot image rotate */
+.globe-on-hand {
+	transform: rotate(-140deg); /*adjust the rotate degree if need */
+}
+.white_hand_star {
+	transform: rotate(-110deg); /*adjust the rotate degree if need */
+}
+.setting {
+	height: 100%;
+	width: auto;
+	transform: rotate(-80deg); /*adjust the rotate degree if need */
+}
+.stock_price {
+	transform: rotate(-50deg); /*adjust the rotate degree if need */
+}
+.fee {
+	transform: rotate(140deg); /*adjust the rotate degree if need */
+}
+.filter {
+	transform: rotate(110deg); /*adjust the rotate degree if need */
+}
+.gan {
+	transform: rotate(80deg); /*adjust the rotate degree if need */
+}
+.hand_setting {
+	transform: rotate(50deg); /*adjust the rotate degree if need */
 }
 
 .yellow-big-dot {
 	background-color: #f5cf40;
 }
 .blue-big-dot {
-	background-color: #0364A5;
-}
-
-/* small earth orbit  */
-.earth-orbit {
-	position: relative;
-	width: 100%; /* Adjust the size of the orbit as needed */
-	height: 100%; /* Adjust the size of the orbit as needed */
-	border-radius: 50%;
+	background-color: #0364a5;
 }
 
 /* for first small orbit  */
@@ -289,7 +328,7 @@
 /* seven small orbit  */
 .seven-earth-orbit {
 	transform: rotate(-80deg);
-	animation: rotateSevenOrbit 3s ease; /* Adjust duration as needed */
+	animation: rotateSevenOrbit 3s ease;
 }
 /* seven small animation  */
 @keyframes rotateSevenOrbit {
@@ -319,6 +358,101 @@
 	}
 }
 
+.text-container {
+	position: absolute;
+	width: 180%;
+	height: 180%;
+	z-index: 5;
+}
+.text-div {
+	color: #035f9d;
+	position: absolute;
+	text-align: end;
+	font-weight: bold;
+}
+
+.first-text {
+	top: 15%;
+	left: -12%;
+	animation: opacityOneFiveText 7s ease;
+}
+@keyframes opacityOneFiveText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.second-text {
+	top: 32%;
+	left: -19%;
+	animation: opacitySecondSixText 5s ease;
+}
+@keyframes opacitySecondSixText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.third-text {
+	top: 55%;
+	left: -15%;
+    animation: opacityThirdSevenText 5s ease;
+}
+@keyframes opacityThirdSevenText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.forth-text {
+	bottom: 20%;
+	left: -6%;
+    animation: opacityForthFiveText 5s ease;
+}
+
+@keyframes opacityForthFiveText {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.five-text {
+	top: 15%;
+	right: -4%;
+	text-align: start;
+    animation: opacityOneFiveText 7s ease;
+}
+
+.six-text {
+	top: 32%;
+	right: -19%;
+	text-align: start;
+    animation: opacitySecondSixText 5s ease;
+}
+
+.seven-text {
+	top: 55%;
+	right: -18%;
+	text-align: start;
+    animation: opacityThirdSevenText 5s ease;
+}
+
+.eight-text {
+	bottom: 20%;
+	right: -8%;
+	text-align: start;
+    animation: opacityForthFiveText 5s ease;
+}
+
 /* css rules end */
 
 /* ======================= */
@@ -334,6 +468,7 @@
 
 	.globe-circle {
 		width: 40%;
+		position: relative;
 	}
 	.inside-globe-text-container {
 		gap: 4px;
@@ -363,13 +498,62 @@
 		bottom: -22px; /* Adjust the number if need */
 	}
 
-    .second-circle-outline-container{
-        width: 160%;
-        height: 160%;
-    }
+	.second-circle-outline-container {
+		width: 160%;
+		height: 160%;
+	}
+
+	.first-text {
+		top: 0%;
+		left: -10%;
+		font-size: 6px;
+	}
+	.second-text {
+		top: 18%;
+		left: -17%;
+		font-size: 6px;
+	}
+	.third-text {
+		top: 44%;
+		left: -16%;
+		font-size: 6px;
+	}
+	.forth-text {
+		bottom: 26%;
+		left: -12%;
+		font-size: 6px;
+	}
+
+	.five-text {
+		top: 5%;
+		right: -8%;
+		text-align: start;
+		font-size: 6px;
+	}
+
+	.six-text {
+		top: 20%;
+		right: -18%;
+		text-align: start;
+		font-size: 6px;
+	}
+
+	.seven-text {
+		top: 45%;
+		right: -18%;
+		text-align: start;
+		font-size: 5.5px;
+	}
+
+	.eight-text {
+		bottom: 26%;
+		right: -15%;
+		text-align: start;
+		font-size: 6px;
+	}
 }
 
-@media (min-width: 640.1px) and (max-width: 1024px) {
+@media (min-width: 640.1px) and (max-width: 1020px) {
 	.why-choose-title {
 		font-size: 16px;
 	}
@@ -381,16 +565,117 @@
 	.globe-circle {
 		width: 45%;
 	}
+
+	.first-text {
+		top: 10%;
+		left: -5%;
+		font-size: 13px;
+	}
+	.second-text {
+		top: 24%;
+		left: -10%;
+		font-size: 12px;
+	}
+	.third-text {
+		top: 50%;
+		left: -10%;
+		font-size: 12px;
+	}
+	.forth-text {
+		bottom: 25%;
+		left: -7%;
+		font-size: 12px;
+	}
+
+	.five-text {
+		top: 11%;
+		right: 1%;
+		text-align: start;
+		font-size: 13px;
+	}
+
+	.six-text {
+		top: 26%;
+		right: -9%;
+		text-align: start;
+		font-size: 13px;
+	}
+
+	.seven-text {
+		top: 48%;
+		right: -10%;
+		text-align: start;
+		font-size: 12px;
+	}
+
+	.eight-text {
+		bottom: 21%;
+		right: -6%;
+		text-align: start;
+		font-size: 13px;
+	}
 }
 
 /* Medium Devices (tablets, 768px and up) */
-@media (min-width: 1024.1px) and (max-width: 1280px) {
+@media (min-width: 1020.1px) and (max-width: 1280px) {
+	.globe-circle {
+		width: 32%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+	}
 	.why-choose-title {
 		font-size: 16px;
 	}
 
 	.why-choose-reasons {
 		font-size: 28px;
+	}
+
+	.first-text {
+		top: 13%;
+		left: -14%;
+		font-size: 14px;
+	}
+	.second-text {
+		top: 30%;
+		left: -22%;
+		font-size: 14px;
+	}
+	.third-text {
+		top: 54%;
+		left: -18%;
+		font-size: 14px;
+	}
+	.forth-text {
+		bottom: 20%;
+		left: -8%;
+		font-size: 12px;
+	}
+
+	.five-text {
+		top: 15%;
+		right: -8%;
+		text-align: start;
+	}
+
+	.six-text {
+		top: 32%;
+		right: -24%;
+		text-align: start;
+	}
+
+	.seven-text {
+		top: 55%;
+		right: -24%;
+		text-align: start;
+	}
+
+	.eight-text {
+		bottom: 19%;
+		right: -14%;
+		text-align: start;
 	}
 }
 /* Medium Devices (tablets, 768px and up) */
@@ -401,5 +686,45 @@
 
 	.why-choose-reasons {
 		font-size: 28px;
+	}
+
+	.first-text {
+		top: 14%;
+		left: -25%;
+	}
+	.second-text {
+		top: 30%;
+		left: -31%;
+	}
+	.third-text {
+		top: 53%;
+		left: -24%;
+	}
+	.forth-text {
+		bottom: 18%;
+		left: -16%;
+	}
+	.five-text {
+		top: 15%;
+		right: -11%;
+		text-align: start;
+	}
+
+	.six-text {
+		top: 32%;
+		right: -28%;
+		text-align: start;
+	}
+
+	.seven-text {
+		top: 55%;
+		right: -29%;
+		text-align: start;
+	}
+
+	.eight-text {
+		bottom: 19%;
+		right: -18%;
+		text-align: start;
 	}
 }
