@@ -58,7 +58,8 @@
 }
 
 .globe-circle {
-	width: 20%;
+	width: 20vw;
+	height: 20vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -68,15 +69,25 @@
 .globe-image-containter {
 	background: url("./bg.avif");
 	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
 	border-radius: 50%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding: 24px;
 }
-
+.glob-image-inside-container{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+	overflow: hidden;
+	border-radius: 50%;
+}
 .globe-image {
 	width: 100%;
+	height: 100%;
 	object-fit: cover;
 }
 
@@ -465,9 +476,13 @@
 	.why-choose-reasons {
 		font-size: 24px;
 	}
+	.globe-image-containter{
+		padding: 10px;
+	}
 
 	.globe-circle {
-		width: 40%;
+		width: 40vw;
+		height: 40vw;
 		position: relative;
 	}
 	.inside-globe-text-container {
@@ -563,7 +578,8 @@
 	}
 
 	.globe-circle {
-		width: 45%;
+		width: 45vw;
+		height: 45vw;
 	}
 
 	.first-text {
@@ -619,7 +635,8 @@
 /* Medium Devices (tablets, 768px and up) */
 @media (min-width: 1020.1px) and (max-width: 1280px) {
 	.globe-circle {
-		width: 32%;
+		width: 32vw;
+		height: 32vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
